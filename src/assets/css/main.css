@@ -1,0 +1,43 @@
+body{
+    overflow-x: hidden;
+}
+
+.navbar-area .navbar-collapse .navbar-nav li.menu-item-has-children > a::after {
+	content: unset;
+}
+
+.slick-dots {
+	display: flex !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	background-color: unset;
+}
+
+.hero-area{
+    background:url('/public/assets/images/Imagens/Photos/modern-printing-press-produces-multi-colored-printouts-accurately-generated-by-ai.jpg');
+    background-size: cover;
+}
+
+.container-fluid{
+    padding-left: unset;
+    padding-right: unset;
+}
+
+.what-we-provide-item{
+    width: 202px !important;
+}
+
+.title-hero{
+    color: #fff;
+}
+
+.white{
+    color:#fff;
+}
+
+.testimonial-card{
+    width: 98%;
+    margin-left: 10px;
+
+}
