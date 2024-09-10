@@ -15,7 +15,7 @@ body{
 }
 
 .hero-area{
-    background:url('./public/assets/images/Imagens/Photos/modern-printing-press-produces-multi-colored-printouts-accurately-generated-by-ai.jpg');
+    background:url('/public/assets/images/Imagens/Photos/modern-printing-press-produces-multi-colored-printouts-accurately-generated-by-ai.jpg');
     background-size: cover;
 }
 
