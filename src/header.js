@@ -29,27 +29,28 @@ export default function Header() {
     return (
         <>
             <div
-                className="navbar-top style-one text-white bgs-cover"
-                style={{ backgroundImage: 'url(assets/images/background/header-top-bg.jpg)' }}
+                className="navbar-top navbar-top-style"
+                
             >
                 <div className="container container-1570">
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="topbar-left text-lg-start text-center">
-                                <span className="off">20% OFF</span>
-                                <span>Free Shipping on all U.S. Orders $50+</span>
+                                <span className="off"><i className="fal fa-phone" /></span>
+                                <span>+258 84 678 6350 </span>
                             </div>
                         </div>
                         <div className="col-lg-6">
                             <ul className="topbar-right justify-content-center justify-content-lg-end">
                                 <li>
-                                    <i className="fal fa-phone" /> <b>Call :<a href="tel:+00023456789"> +000 123 (456) 789</a></b>
+                                    <i className="fal fa-user" /> <b>MInha Conta</b>
                                 </li>
                                 <li className="social-style-one">
-                                    <a href="#"><i className="fab fa-facebook-f" aria-hidden="true" /></a>
-                                    <a href="#"><i className="fab fa-twitter" aria-hidden="true" /></a>
-                                    <a href="#"><i className="fab fa-dribbble" aria-hidden="true" /></a>
-                                    <a href="#"><i className="fab fa-instagram" aria-hidden="true" /></a>
+                                    <i className="fab fa-facebook-f" aria-hidden="true" /><b>Meus pedidos</b>
+                                </li>
+
+                                <li className="social-style-one">
+                                    <i className="fab fa-logout" aria-hidden="true" /><b>Seja Bem-vindo</b>
                                 </li>
                             </ul>
                         </div>
@@ -102,13 +103,13 @@ export default function Header() {
                                     <li><a href="service-details.html">Service Details</a></li>
                                 </ul>*/}
                             </li>
-                            <li className="menu-item-has-children">
+                            {/* <li className="menu-item-has-children">
                                 <Link to="/projects">Projetos</Link>
                                 {/*<ul className="sub-menu">
                                     <li><a href="projects.html">Projects</a></li>
                                     <li><a href="project-details.html">Projects Details</a></li>
-                                </ul>*/}
-                            </li>
+                                </ul>
+                            </li> */}
                             <li className="menu-item-has-children">
                                 <a href="/shop">Loja</a>
                                 {/*<ul className="sub-menu">
@@ -120,6 +121,16 @@ export default function Header() {
                                 </ul>*/}
                             </li>
                             <li className="menu-item-has-children">
+                            <li><Link to="/contact">Fala connosco</Link></li>
+                                {/*<ul className="sub-menu">
+                                    <li><a href="shop.html">Shop One</a></li>
+                                    <li><a href="shop2.html">Shop Two</a></li>
+                                    <li><a href="shop3.html">Shop Three</a></li>
+                                    <li><a href="product-details.html">Single Product_1</a></li>
+                                    <li><a href="product-details2.html">Single Product_2</a></li>
+                                </ul>*/}
+                            </li>
+                            {/* <li className="menu-item-has-children">
                                 <a href="#">Páginas</a>
                                 <ul className="sub-menu">
                                     <li><a href="team.html">Team Members</a></li>
@@ -128,13 +139,13 @@ export default function Header() {
                                         {/*<ul className="sub-menu">
                                             <li><a href="blog.html">Blog</a></li>
                                             <li><a href="blog-details.html">Blog Details</a></li>
-                                        </ul>*/}
+                                        </ul>
                                     </li>
                                     <li><Link to="/faqs">FAQs</Link></li>
-                                    <li><Link to="/contact">Contact Us</Link></li>
+                                    <li><Link to="/contact">Fala connosco</Link></li>
                                     <li><a href="/404">404 Error</a></li>
                                 </ul>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                     <div className="nav-right-part nav-right-part-desktop">
@@ -144,11 +155,9 @@ export default function Header() {
                         <button>
                             <i className="far fa-shopping-basket" />
                         </button>
-                        <button>
-                            <i className="far fa-heart" />
-                        </button>
+                        
                         <a href="contact.html" className="theme-btn style-two">
-                            Get Started <i className="far fa-long-arrow-right" />
+                            INICIAR<i className="far fa-long-arrow-right" />
                         </a>
                         <div className="menu-sidebar">
                             <button>

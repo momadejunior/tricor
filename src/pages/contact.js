@@ -164,7 +164,7 @@ export default function Contacts(){
             <div class="row">
                 <div class="col-xl-4">
                     <div class="cta-left-image rel z-1 wow fadeInLeft delay-0-4s">
-                        <img src="assets/images/cta/cta-left.png" alt="CTA Left"/>
+                        <img src="assets/images/printer.png" alt="CTA Left"/>
                         <div class="circle-shapes white-shape no-animation">
                             <div class="shape-inner">
                                 <span class="dot-one"></span>

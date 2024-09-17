@@ -47,18 +47,14 @@ export default function Home() {
             <div className="hero-area pt-145 pb-75 rel z-1">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-lg-8">
+                        <div className="col-lg-5">
                             <div className="hero-content rmb-55 wow fadeInUp delay-0-2s">
-                                <span className="sub-title mb-15">TICOR Print Solutions</span>
+
                                 <h1 className='title-hero'>Bem-vindo à TICOR, sua parceira em soluções de impressão.</h1>
                                 <p className='white'>Oferecemos serviços personalizados e produtos de alta qualidade, adira e descubra como podemos ajudá-lo a destacar sua marca.</p>
-                                <ul className="list-style-one pt-10 wow fadeInUp delay-0-3s">
-                                    <li>Quality Services Provider</li>
-                                    <li>Printing, Designing and Transportation</li>
-                                </ul>
+                                
                                 <div className="hero-btns pt-25 wow fadeInUp delay-0-4s">
-                                    <a href="team.html" className="theme-btn">Talk With Us <i className="far fa-long-arrow-right"></i></a>
-                                    <a href="contact.html" className="theme-btn style-three">Latest Projects <i className="far fa-long-arrow-right"></i></a>
+                                    <a href="team.html" className="theme-btn">SOLICITA ORCAMENTO<i className="far fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -86,38 +82,38 @@ export default function Home() {
             <section className="what-we-provide bgc-lighter pt-75 pb-80">
                 <div className="container">
                     <div className="section-title text-center mb-20 wow fadeInUp delay-0-2s">
-                        <span className="sub-title mb-10">Nosso Trabalho</span>
-                        <h2>Veja alguns exemplos dos nossos projetos recentes<br></br> e inspire-se para o seu próximo pedido.</h2>
+                        <span className="sub-title mb-10">7% de descontos para pedidos pelo site</span>
+                        <h2>O que vai imprimir hoje?</h2>
                     </div>
 
                     <div className="what-we-provide-slider">
                         <Slider {...settings} className="what-we-provide-active">
                             <div className="what-we-provide-item wow fadeInUp delay-0-2s">
-                                <i className="flaticon-t-shirt"></i>
+                                <img src="./img/flash.png" className="flaticon-t-shirt"/>
                                 <h6><a href="service-details.html">T-Shirt Print</a></h6>
                             </div>
                             <div className="what-we-provide-item wow fadeInUp delay-0-3s">
-                                <i className="flaticon-logo"></i>
+                                <img src="./img/card.png"/>
                                 <h6><a href="service-details.html">Logo Design</a></h6>
                             </div>
                             <div className="what-we-provide-item wow fadeInUp delay-0-4s">
-                                <i className="flaticon-banner"></i>
+                            <img src="./img/notebook.png"/>
                                 <h6><a href="service-details.html">Banner Print</a></h6>
                             </div>
                             <div className="what-we-provide-item wow fadeInUp delay-0-5s">
-                                <i className="flaticon-reading-book"></i>
+                            <img src="./img/mug.png"/>
                                 <h6><a href="service-details.html">Books Print</a></h6>
                             </div>
                             <div className="what-we-provide-item wow fadeInUp delay-0-6s">
-                                <i className="flaticon-debit-card"></i>
+                            <img src="./img/tshirt.png"/>
                                 <h6><a href="service-details.html">Card Print</a></h6>
                             </div>
                             <div className="what-we-provide-item wow fadeInUp delay-0-7s">
-                                <i className="flaticon-award"></i>
+                            <img src="./img/cap.png"/>
                                 <h6><a href="service-details.html">Trophy Print</a></h6>
                             </div>
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
-                                <i className="flaticon-banner"></i>
+                            <img src="./img/banner.png"/>
                                 <h6><a href="service-details.html">Banner Print</a></h6>
                             </div>
                         </Slider>
@@ -150,7 +146,7 @@ export default function Home() {
                             <div className="about-content wow fadeInUp delay-0-2s">
                                 <div className="section-title mb-20">
                                     <span className="sub-title mb-15">Sobre Nós</span>
-                                    <h2>Somos uma Empresa de soluções de Impressão Baseada em Moçambique.</h2>
+                                    <p className="grey-ticor">somos a ticor, uma empresa mocambicana especializada em solucoes de impressao inovadors e personalizadas, dedicada a atender com excelencia desde pequenas empresas ate grandes corporacoes</p>
                                 </div>
                                 {/*<div className="experience-year mb-20">
                                     <h6>We Have More then</h6>
@@ -159,8 +155,8 @@ export default function Home() {
                                 </div>
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam eaquey ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo voluptatem quia voluptas</p>
                                 */}<div className="about-btns pt-5">
-                                    <a href="about.html" className="theme-btn mt-20">Learn More <i className="far fa-long-arrow-right"></i></a>
-                                    <a href="https://www.youtube.com/watch?v=9Y7ma241N8k" className="mfp-iframe about-video-play mt-20"><i className="fas fa-play"></i> <span>How IT Works</span></a>
+                                    <a href="about.html" className="theme-btn mt-20">Ler mais<i className="far fa-long-arrow-right"></i></a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -245,7 +241,6 @@ export default function Home() {
                 </div>
             </div>
 
-            <Statistics/>
 
 
 {/*Lastest Project here*
@@ -272,7 +267,7 @@ Lastest Project here*/}
             <PricingPackage />
             {/*Ends Here Package*/}
 
-            <section className="blog-area z-1 rel bgc-lighter pt-120 pb-100">
+            {/* <section className="blog-area z-1 rel bgc-lighter pt-120 pb-100">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-xl-6 col-lg-7">
@@ -342,7 +337,7 @@ Lastest Project here*/}
                         <span className="dot-five"></span>
                     </div>
                 </div>
-            </section>
+            </section> */}
             {/*<!-- Blog Area end -->*/}
 
 

@@ -279,7 +279,13 @@ input[type=checkbox], input[type=radio] {
   display: -ms-inline-flexbox;
   display: inline-flex;
   color: #dd1d26;
-  text-transform: capitalize; }
+
+
+}
+
+
+
+
   @media only screen and (max-width: 575px) {
     .sub-title {
       font-size: 18px; } }
@@ -327,7 +333,7 @@ a.theme-btn {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  text-transform: capitalize;
+
   background: #dd1d26; }
   .theme-btn i,
   a.theme-btn i {
@@ -2846,7 +2852,7 @@ h1, h2, h3, h4, h5, h6, .tab-btns-one .nav-link .title {
 /*******************************************************/
 .navbar-top {
   font-size: 16px;
-  padding-top: 6px;
+  padding-top: 16px;
   padding-bottom: 6px; }
   @media only screen and (max-width: 479px) {
     .navbar-top .topbar-left {
@@ -4022,7 +4028,6 @@ h1, h2, h3, h4, h5, h6, .tab-btns-one .nav-link .title {
 /*******************  08. Hero Area ********************/
 /*******************************************************/
 .hero-content h1 {
-  font-size: 65px;
   margin-bottom: 30px; }
   @media only screen and (max-width: 1199px) {
     .hero-content h1 {

@@ -15,8 +15,16 @@ body{
 }
 
 .hero-area{
-    background:url('/public/assets/images/Imagens/Photos/modern-printing-press-produces-multi-colored-printouts-accurately-generated-by-ai.jpg');
+    background:url('../img/bg.jpg');
     background-size: cover;
+}
+
+.grey-ticor{
+    color:#486A7C;
+}
+
+p{
+    color:#486A7C;
 }
 
 .container-fluid{
@@ -29,15 +37,30 @@ body{
 }
 
 .title-hero{
-    color: #fff;
+    color: #486A7C;
 }
 
 .white{
-    color:#fff;
+    color:#486A7C;
 }
 
 .testimonial-card{
     width: 98%;
     margin-left: 10px;
 
+}
+
+.theme-btn{
+    background:#C25679 !important;
+    text-decoration: unset;
+    color:#fff;
+}
+
+.theme-btn:hover{
+    background:#bb466b !important;
+    color:#fff;
+}
+
+.navbar-top-style{
+    background-color: #F8EC52;
 }
