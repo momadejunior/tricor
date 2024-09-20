@@ -64,3 +64,16 @@ p{
 .navbar-top-style{
     background-color: #F8EC52;
 }
+
+.bg-contact{
+    background: #F8EC52;
+    color:#bb466b;
+}
+
+.sub-title{
+    color:#bb466b !important;
+}
+
+.title-contact-us{
+    color:#000 !important;
+}

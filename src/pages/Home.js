@@ -5,6 +5,7 @@ import Testimonial from '../components/testimonial';
 import LastestProject from '../components/lastest-project';
 import ContactUS from '../components/contact-us';
 import Statistics from '../components/statistic';
+import LastestService from '../components/lastest-services';
 export default function Home() {
 
 
@@ -164,84 +165,11 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="services-area rel z-1">
-                <div className="container-fluid">
-                    <div className="services-inner text-white bgc-black">
-                        <div className="row align-items-center">
-                            <div className="col-xl-4 col-lg-7">
-                                <div className="service-content rel p-100 py-130 rpb-100 wow fadeInUp delay-0-2s">
-                                    <div className="section-title mb-30">
-                                        <span className="sub-title mb-15">Latest Services</span>
-                                        <h2>Awesome Service For Printing and Design</h2>
-                                    </div>
-                                    <h6>Awards Winning Printing Company</h6>
-                                    <p>Take a trivial example which of ever untakes laborious physical exercise except</p>
-                                    <a href="services.html" className="theme-btn hover-two mt-20">Learn More <i className="far fa-long-arrow-right"></i></a>
-                                    <div className="circle-shapes no-animation">
-                                        <div className="shape-inner">
-                                            <span className="dot-one"></span>
-                                            <span className="dot-two"></span>
-                                            <span className="dot-three"></span>
-                                            <span className="dot-four"></span>
-                                            <span className="dot-five"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xl-8">
-                                <div className="row no-gap">
-                                    <div className="col-md-6">
-                                        <div className="service-item wow fadeInDown delay-0-4s">
-                                            <div className="icon">
-                                                <i className="flaticon-print"></i>
-                                            </div>
-                                            <h3><a href="service-details.html">Impressão Digital</a></h3>
-                                            <p>Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque</p>
-                                            <a href="service-details.html" className="read-more">Read More <i className="far fa-long-arrow-right"></i></a>
-                                            <div className="bg-image" ></div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className="service-item wow fadeInDown delay-0-4s">
-                                            <div className="icon">
-                                                <i className="flaticon-3d-printer"></i>
-                                            </div>
-                                            <h3><a href="service-details.html">Serigrafia para T-Shirts</a></h3>
-                                            <p>On the other hand, we denounce with rigteous indignation and dislike demoralized</p>
-                                            <a href="service-details.html" className="read-more">Read More <i className="far fa-long-arrow-right"></i></a>
-                                            <div className="bg-image" ></div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className="service-item wow fadeInUp delay-0-6s">
-                                            <div className="icon">
-                                                <i className="flaticon-print-1"></i>
-                                            </div>
-                                            <h3><a href="service-details.html">Impressão Offset</a></h3>
-                                            <p>Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque</p>
-                                            <a href="service-details.html" className="read-more">Read More <i className="far fa-long-arrow-right"></i></a>
-                                            <div className="bg-image" ></div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <div className="service-item wow fadeInUp delay-0-6s">
-                                            <div className="icon">
-                                                <i className="flaticon-focus"></i>
-                                            </div>
-                                            <h3><a href="service-details.html">Sublimação</a></h3>
-                                            <p>On the other hand, we denounce with rigteous indignation and dislike demoralized</p>
-                                            <a href="service-details.html" className="read-more">Read More <i className="far fa-long-arrow-right"></i></a>
-                                            <div className="bg-image" ></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           {/*Lastest Service*/}
 
+           <LastestService/>
 
+        {/*Lastest Service*/}
 
 {/*Lastest Project here*
             <LastestProject/>
