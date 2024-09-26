@@ -80,70 +80,70 @@ export default function Header() {
                         </Link>
                     </div>
                     <div className="nav-right-part nav-right-part-mobile">
-                        <a className="search-bar-btn" href="#">
+                       <Link className="search-bar-btn" href="#">
                             <i className="far fa-search" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="collapse navbar-collapse" id="Iitechie_main_menu">
                         <ul className="navbar-nav menu-open text-lg-end">
                             <li className="menu-item-has-children">
-                                <a href="/">Página Inicial</a>
+                                <Link to="/">Página Inicial</Link>
                                 {/*<ul className="sub-menu">
-                                    <li><a href="index.html">Home One</a></li>
-                                    <li><a href="index2.html">Home Two</a></li>
-                                    <li><a href="index3.html">Home Three</a></li>
+                                    <li><Link href="index.html">Home One</Link></li>
+                                    <li><Link href="index2.html">Home Two</Link></li>
+                                    <li><Link href="index3.html">Home Three</Link></li>
                                 </ul>*/}
                             </li>
                             <li><Link to="/about">Sobre</Link></li>
                             <li className="menu-item-has-children">
                                 <Link to="/services">Serviços</Link>
                                 {/*<ul className="sub-menu">
-                                    <li><a href="services.html">Services One</a></li>
-                                    <li><a href="services2.html">Services Two</a></li>
-                                    <li><a href="service-details.html">Service Details</a></li>
+                                    <li><Link href="services.html">Services One</Link></li>
+                                    <li><Link href="services2.html">Services Two</Link></li>
+                                    <li><Link href="service-details.html">Service Details</Link></li>
                                 </ul>*/}
                             </li>
                             {/* <li className="menu-item-has-children">
                                 <Link to="/projects">Projetos</Link>
                                 {/*<ul className="sub-menu">
-                                    <li><a href="projects.html">Projects</a></li>
-                                    <li><a href="project-details.html">Projects Details</a></li>
+                                    <li><Link href="projects.html">Projects</Link></li>
+                                    <li><Link href="project-details.html">Projects Details</Link></li>
                                 </ul>
                             </li> */}
                             <li className="menu-item-has-children">
-                                <a href="/shop">Loja</a>
+                                <Link to="/shop">Loja</Link>
                                 {/*<ul className="sub-menu">
-                                    <li><a href="shop.html">Shop One</a></li>
-                                    <li><a href="shop2.html">Shop Two</a></li>
-                                    <li><a href="shop3.html">Shop Three</a></li>
-                                    <li><a href="product-details.html">Single Product_1</a></li>
-                                    <li><a href="product-details2.html">Single Product_2</a></li>
+                                    <li><Link href="shop.html">Shop One</Link></li>
+                                    <li><Link href="shop2.html">Shop Two</Link></li>
+                                    <li><Link href="shop3.html">Shop Three</Link></li>
+                                    <li><Link href="product-details.html">Single Product_1</Link></li>
+                                    <li><Link href="product-details2.html">Single Product_2</Link></li>
                                 </ul>*/}
                             </li>
                             <li className="menu-item-has-children">
                             <li><Link to="/contact">Fala connosco</Link></li>
                                 {/*<ul className="sub-menu">
-                                    <li><a href="shop.html">Shop One</a></li>
-                                    <li><a href="shop2.html">Shop Two</a></li>
-                                    <li><a href="shop3.html">Shop Three</a></li>
-                                    <li><a href="product-details.html">Single Product_1</a></li>
-                                    <li><a href="product-details2.html">Single Product_2</a></li>
+                                    <li><Link href="shop.html">Shop One</Link></li>
+                                    <li><Link href="shop2.html">Shop Two</Link></li>
+                                    <li><Link href="shop3.html">Shop Three</Link></li>
+                                    <li><Link href="product-details.html">Single Product_1</Link></li>
+                                    <li><Link href="product-details2.html">Single Product_2</Link></li>
                                 </ul>*/}
                             </li>
                             {/* <li className="menu-item-has-children">
-                                <a href="#">Páginas</a>
+                               <link href="#">Páginas</Link>
                                 <ul className="sub-menu">
-                                    <li><a href="team.html">Team Members</a></li>
+                                    <li><Link href="team.html">Team Members</Link></li>
                                     <li className="menu-item-has-children">
                                         <Link to="/blog">Blog</Link>
                                         {/*<ul className="sub-menu">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                            <li><Link href="blog.html">Blog</Link></li>
+                                            <li><Link href="blog-details.html">Blog Details</Link></li>
                                         </ul>
                                     </li>
                                     <li><Link to="/faqs">FAQs</Link></li>
                                     <li><Link to="/contact">Fala connosco</Link></li>
-                                    <li><a href="/404">404 Error</a></li>
+                                    <li><Link href="/404">404 Error</Link></li>
                                 </ul>
                             </li> */}
                         </ul>
@@ -156,9 +156,9 @@ export default function Header() {
                             <i className="far fa-shopping-basket" />
                         </button>
                         
-                        <a href="contact.html" className="theme-btn style-two">
+                       <Link href="contact.html" className="theme-btn style-two">
                             INICIAR<i className="far fa-long-arrow-right" />
-                        </a>
+                        </Link>
                         <div className="menu-sidebar">
                             <button>
                                 <i className="far fa-ellipsis-h" />

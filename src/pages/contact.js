@@ -2,7 +2,7 @@ export default function Contacts(){
     return(
         <>
             
-        <section class="page-banner bgs-cover text-white pt-65 pb-75" >
+        <section class="page-banner bgs-cover text-white pt-65 pb-75" style={{backgroundImage:'url(assets/images/fala_connosco.png)'}}>
             <div class="container">
                 <div class="banner-inner">
                     <h2 class="page-title wow fadeInUp delay-0-2s">Contact Us</h2>

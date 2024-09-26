@@ -29,7 +29,7 @@ export default function ContactUS(){
                     </div>
                     <div className="col-xl-4">
                         <div className="cta-right-image rel z-1 wow fadeInRight delay-0-2s">
-                            <img src="assets/images/cta/cta-right.png" alt="CTA Right" />
+                            <img src="assets/images/cta/items.png" alt="CTA Right" />
                             <div className="circle-shapes white-shape no-animation">
                                 <div className="shape-inner">
                                     <span className="dot-one"></span>

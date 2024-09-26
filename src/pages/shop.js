@@ -1,15 +1,17 @@
+import ContactUS from "../components/contact-us";
+
 export default function Shop(){
     return(
         <>
         
-        <section class="page-banner bgs-cover text-white pt-65 pb-75" style={{backgroundImage:'url(assets/images/banner.jpg)'}}>
+        <section class="page-banner bgs-cover text-white pt-65 pb-75" style={{backgroundImage:'url(assets/images/loja.png)'}}>
             <div class="container">
                 <div class="banner-inner">
-                    <h2 class="page-title wow fadeInUp delay-0-2s">Shop_01</h2>
+                    <h2 class="page-title wow fadeInUp delay-0-2s">Loja</h2>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb wow fadeInUp delay-0-4s">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">shop</li>
+                            <li class="breadcrumb-item active">Loja</li>
                         </ol>
                     </nav>
                 </div>
@@ -296,48 +298,7 @@ export default function Shop(){
             </div>
         </section>
     
-        <section class="cta-area bgc-gradient">
-            <div class="row">
-                <div class="col-xl-4">
-                    <div class="cta-left-image rel z-1 wow fadeInLeft delay-0-4s">
-                        <img src="assets/images/cta/cta-left.png" alt="CTA Left"/>
-                        <div class="circle-shapes white-shape no-animation">
-                            <div class="shape-inner">
-                                <span class="dot-one"></span>
-                                <span class="dot-two"></span>
-                                <span class="dot-three"></span>
-                                <span class="dot-four"></span>
-                                <span class="dot-five"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 align-self-center">
-                    <div class="cta-content text-white py-55 wow fadeInUp delay-0-2s">
-                        <div class="section-title mb-35">
-                            <span class="sub-title mb-10">Contact With Us</span>
-                            <h2>Need Any Printig For your Business?</h2>
-                        </div>
-                        <a href="projects.html" class="theme-btn">Start Your Projects <i class="far fa-long-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-xl-4">
-                    <div class="cta-right-image rel z-1 wow fadeInRight delay-0-2s">
-                        <img src="assets/images/cta/cta-right.png" alt="CTA Right"/>
-                        <div class="circle-shapes white-shape no-animation">
-                            <div class="shape-inner">
-                                <span class="dot-one"></span>
-                                <span class="dot-two"></span>
-                                <span class="dot-three"></span>
-                                <span class="dot-four"></span>
-                                <span class="dot-five"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-       
+       <ContactUS/>
        
         </>
     )

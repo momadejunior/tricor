@@ -7,7 +7,7 @@ export default function About(){
     return(
         <>
         
-  <section className="page-banner bgs-cover text-white pt-65 pb-75" style={{backgroundImage: 'url(assets/images/banner.jpg)'}}>
+  <section className="page-banner bgs-cover text-white pt-65 pb-75" style={{backgroundImage: 'url(assets/images/sobre.png)'}}>
     <div className="container">
       <div className="banner-inner">
         <h2 className="page-title wow fadeInUp delay-0-2s">
@@ -31,11 +31,10 @@ export default function About(){
           <div className="about-page-content rmb-65 wow fadeInUp delay-0-2s">
             <div className="section-title mb-20">
               <span className="sub-title mb-15">Sobre Nós</span>
-              <h2>Somos uma Empresa de soluções de 
-                Impressão Baseada em Moçambique.
+              <h2>A TICOR é uma empresa de soluções de impressão com sede em Moçambique, empenhada em oferecer soluções inovadoras e personalizadas. 
               </h2>
             </div>
-            <p>Na TICOR, temos o compromisso de oferecer soluções de impressão inovadoras e personalizadas. Profissionais com anos de experiência no setor, nossa equipa dedicada trabalha para garantir a máxima satisfação dos nossos clientes, desde pequenas empresas até grandes corporações.</p>
+            <p>Dispomos de uma equipa de profissionais altamente experientes e investimos continuamente em novas tecnologias e conhecimento técnico para assegurar resultados eficazes. O nosso compromisso com a qualidade e a pontualidade garante a satisfação de todos os nossos clientes, que vão desde pequenas empresas até grandes corporações.</p>
             <div className="about-btns pt-5">
               <a href="about.html" className="theme-btn mt-20">Learn More <i className="far fa-long-arrow-right" /></a>
               <a href="https://www.youtube.com/watch?v=9Y7ma241N8k" className="mfp-iframe about-video-play mt-20"><i className="fas fa-play" /> <span>How IT Works</span></a>
@@ -49,8 +48,8 @@ export default function About(){
                 <i className="flaticon-target" />
               </div>
               <div className="content">
-                <h4>Our Mission</h4>
-                <p>Denounce with righteous indign and dislike men beguiled</p>
+                <h4>Visão</h4>
+                <p>A nossa ambição é ser reconhecida como a líder em soluções de impressão em Moçambique, através de uma inovação constante e da oferta de serviços que superem as expectativas dos nossos clientes. Almejamos tornar-nos a escolha preferencial de empresas de todas as dimensões, destacando-nos pela qualidade, fiabilidade e um firme compromisso com a sustentabilidade.</p>
               </div>
             </div>
             <div className="mission-vision-item wow fadeInUp delay-0-6s">
@@ -58,8 +57,8 @@ export default function About(){
                 <i className="flaticon-mission" />
               </div>
               <div className="content">
-                <h4>Our Vision</h4>
-                <p>Denounce with righteous indign and dislike men beguiled</p>
+                <h4>Missão</h4>
+                <p>Na TICOR, a nossa missão consiste em fornecer soluções de impressão inovadoras e personalizadas que atendam às necessidades específicas dos nossos clientes. Com uma equipa dedicada e experiente, esforçamo-nos por garantir a máxima satisfação em cada projeto, atuando sempre com integridade e paixão. Estamos focados em estabelecer relações duradouras e contribuir para o sucesso dos nossos clientes, sempre alinhados com a nossa visão de excelência e inovação no setor.</p>
               </div>
             </div>
           </div>
