@@ -27,6 +27,14 @@ p{
     color:#486A7C;
 }
 
+.services-area {
+	padding: unset !important;
+}
+
+.service-item {
+	 border: unset !important; 
+}
+
 .container-fluid{
     padding-left: unset;
     padding-right: unset;
@@ -76,4 +84,27 @@ p{
 
 .title-contact-us{
     color:#000 !important;
+}
+
+
+
+.items-pricing {
+	height: 270px;
+}
+
+.icon-navbar{
+    height: 18px;
+    margin-right: 10px;
+}
+
+.icon-social{
+    width: 28px;
+}
+
+.nav-right-part {
+	gap: 10px;
+}
+
+.page-banner {
+	margin: 0 !important;
 }

@@ -6,6 +6,7 @@ import LastestProject from '../components/lastest-project';
 import ContactUS from '../components/contact-us';
 import Statistics from '../components/statistic';
 import LastestService from '../components/lastest-services';
+import { Link } from 'react-router-dom';
 export default function Home() {
 
 
@@ -55,7 +56,7 @@ export default function Home() {
                                 <p className='white'>Oferecemos serviços personalizados e produtos de alta qualidade, adira e descubra como podemos ajudá-lo a destacar sua marca.</p>
                                 
                                 <div className="hero-btns pt-25 wow fadeInUp delay-0-4s">
-                                    <a href="team.html" className="theme-btn">SOLICITA ORCAMENTO<i className="far fa-long-arrow-right"></i></a>
+                                    <Link to="team.html" className="theme-btn">SOLICITA ORCAMENTO<i className="far fa-long-arrow-right"></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -90,32 +91,161 @@ export default function Home() {
                     <div className="what-we-provide-slider">
                         <Slider {...settings} className="what-we-provide-active">
                             <div className="what-we-provide-item wow fadeInUp delay-0-2s">
-                                <img src="./img/flash.png" className="flaticon-t-shirt"/>
-                                <h6><a href="service-details.html">T-Shirt Print</a></h6>
+                                <img src="./img/01.png" className="flaticon-t-shirt"/>
+                                <h6><Link to="/services">Chaveiro</Link></h6>
                             </div>
                             <div className="what-we-provide-item wow fadeInUp delay-0-3s">
-                                <img src="./img/card.png"/>
-                                <h6><a href="service-details.html">Logo Design</a></h6>
+                                <img src="./img/notebook.png"/>
+                                <h6><Link to="/services">Bloco de Notas</Link></h6>
                             </div>
                             <div className="what-we-provide-item wow fadeInUp delay-0-4s">
-                            <img src="./img/notebook.png"/>
-                                <h6><a href="service-details.html">Banner Print</a></h6>
+                            <img src="./img/roll_up.png"/>
+                                <h6><Link to="/services">Roll Up</Link></h6>
                             </div>
                             <div className="what-we-provide-item wow fadeInUp delay-0-5s">
-                            <img src="./img/mug.png"/>
-                                <h6><a href="service-details.html">Books Print</a></h6>
+                            <img src="./img/livro.png"/>
+                                <h6><Link to="/services">Livro</Link></h6>
                             </div>
                             <div className="what-we-provide-item wow fadeInUp delay-0-6s">
                             <img src="./img/tshirt.png"/>
-                                <h6><a href="service-details.html">Card Print</a></h6>
+                                <h6><Link to="/services">T-shirt</Link></h6>
                             </div>
                             <div className="what-we-provide-item wow fadeInUp delay-0-7s">
-                            <img src="./img/cap.png"/>
-                                <h6><a href="service-details.html">Trophy Print</a></h6>
+                            <img src="./img/pen.png"/>
+                                <h6><Link to="/services">Caneta</Link></h6>
                             </div>
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/banner.png"/>
-                                <h6><a href="service-details.html">Banner Print</a></h6>
+                                <h6><Link to="/services">Banner</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/cap.png"/>
+                                <h6><Link to="/services">Chapeu</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/caixa.png"/>
+                                <h6><Link to="/services">Caixa</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/livreto.png"/>
+                                <h6><Link to="/services">Livreto</Link></h6>
+                            </div>
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/mug.png"/>
+                                <h6><Link to="/services">Chavena</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/magazine.png"/>
+                                <h6><Link to="/services">Revista</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/menus.png"/>
+                                <h6><Link to="/services">Menus</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/stamp.png"/>
+                                <h6><Link to="/services">Carimbo</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/sacola.png"/>
+                                <h6><Link to="/services">Sacola</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/bebedouro.png"/>
+                                <h6><Link to="/services">Bebedouro</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/recibo.png"/>
+                                <h6><Link to="/services">Recibo</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/polo_tshirt.png"/>
+                                <h6><Link to="/services">Polo T-shirt</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/sacola_02.png"/>
+                                <h6><Link to="/services">Sacola</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/caixa_02.png"/>
+                                <h6><Link to="/services">Caixa</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/flashdisk.png"/>
+                                <h6><Link to="/services">Flash</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/letterhead.png"/>
+                                <h6><Link to="/services">Papel Timbrado</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/envelope.png"/>
+                                <h6><Link to="/services">Envelope</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/door-hanger.png"/>
+                                <h6><Link to="/services">Cabide de Porta</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/brochure.png"/>
+                                <h6><Link to="/services">Brochura</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/saco_plasticos.png"/>
+                                <h6><Link to="/services">Saco Plastico</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/calendario.png"/>
+                                <h6><Link to="/services">Calendario</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/umbrela.png"/>
+                                <h6><Link to="/services">Guarda-Chuva</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/chaveiro_02.png"/>
+                                <h6><Link to="/services">Chaveiro</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/flyers.png"/>
+                                <h6><Link to="/services">Flyers</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/hatchback.png"/>
+                                <h6><Link to="/services">Hatchback</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/glass.png"/>
+                                <h6><Link to="/services">Garrafa</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/photos.png"/>
+                                <h6><Link to="/services">Fotos</Link></h6>
                             </div>
                         </Slider>
                     </div>
@@ -156,7 +286,7 @@ export default function Home() {
                                 </div>
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam eaquey ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo voluptatem quia voluptas</p>
                                 */}<div className="about-btns pt-5">
-                                    <a href="about.html" className="theme-btn mt-20">Ler mais<i className="far fa-long-arrow-right"></i></a>
+                                    <Link to="about.html" className="theme-btn mt-20">Ler mais<i className="far fa-long-arrow-right"></i></Link>
                                     
                                 </div>
                             </div>
@@ -214,11 +344,11 @@ Lastest Project here*/}
                                 <div className="content">
                                     <div className="author">
                                         <img src="assets/images/blog/author.jpg" alt="Author" />
-                                        <a className="name" href="#">Somalia</a>
+                                        <Link className="name" to="#">Somalia</Link>
                                     </div>
-                                    <span className="date"><i className="far fa-calendar-alt"></i> <a href="#">Jule 24, 2022</a></span>
-                                    <h4><a href="blog-details.html">Smashing Podcast Episode With Vitaly Friedman Jay</a></h4>
-                                    <a href="blog-details.html" className="read-more">Read More <i className="far fa-long-arrow-right"></i></a>
+                                    <span className="date"><i className="far fa-calendar-alt"></i> <Link to="#">Jule 24, 2022</Link></span>
+                                    <h4><Link to="blog-details.html">Smashing Podcast Episode With Vitaly Friedman Jay</Link></h4>
+                                    <Link to="blog-details.html" className="read-more">Read More <i className="far fa-long-arrow-right"></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -230,11 +360,11 @@ Lastest Project here*/}
                                 <div className="content">
                                     <div className="author">
                                         <img src="assets/images/blog/author.jpg" alt="Author" />
-                                        <a className="name" href="#">Somalia</a>
+                                        <Link className="name" to="#">Somalia</Link>
                                     </div>
-                                    <span className="date"><i className="far fa-calendar-alt"></i> <a href="#">Jule 24, 2022</a></span>
-                                    <h4><a href="blog-details.html">Rethinking Server-Timing As A Monitoring Tool</a></h4>
-                                    <a href="blog-details.html" className="read-more">Read More <i className="far fa-long-arrow-right"></i></a>
+                                    <span className="date"><i className="far fa-calendar-alt"></i> <Link to="#">Jule 24, 2022</Link></span>
+                                    <h4><Link to="blog-details.html">Rethinking Server-Timing As A Monitoring Tool</Link></h4>
+                                    <Link to="blog-details.html" className="read-more">Read More <i className="far fa-long-arrow-right"></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -246,11 +376,11 @@ Lastest Project here*/}
                                 <div className="content">
                                     <div className="author">
                                         <img src="assets/images/blog/author.jpg" alt="Author" />
-                                        <a className="name" href="#">Somalia</a>
+                                        <Link className="name" to="#">Somalia</Link>
                                     </div>
-                                    <span className="date"><i className="far fa-calendar-alt"></i> <a href="#">Jule 24, 2022</a></span>
-                                    <h4><a href="blog-details.html">Modern Way To Create And See Host WordPress</a></h4>
-                                    <a href="blog-details.html" className="read-more">Read More <i className="far fa-long-arrow-right"></i></a>
+                                    <span className="date"><i className="far fa-calendar-alt"></i> <Link to="#">Jule 24, 2022</Link></span>
+                                    <h4><Link to="blog-details.html">Modern Way To Create And See Host WordPress</Link></h4>
+                                    <Link to="blog-details.html" className="read-more">Read More <i className="far fa-long-arrow-right"></i></Link>
                                 </div>
                             </div>
                         </div>

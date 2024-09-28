@@ -8,19 +8,19 @@ export default  function LastestService(){
         autoplay: true,
         speed: 1000,
         slidesToShow: 1,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         arrows: false,
         responsive: [
             {
                 breakpoint: 1200,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 1,
                 },
             },
             {
                 breakpoint: 991,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                 },
             },
             {
@@ -45,18 +45,18 @@ export default  function LastestService(){
                                        {/*  <span className="sub-title mb-15">Latest Services</span> */}
                                         <Slider {...settings}>
                                             <div>
-                                                <h2 className="text-center">Transforme Suas Ideias em Realidade com Impressão Digital!</h2>
+                                                <h2 className="">Transforme Suas Ideias em Realidade com Impressão Digital!</h2>
                                             </div>
 
                                             <div>
-                                                <h2 className="text-center">Grandes Projetos Merecem Grande Qualidade!</h2>
+                                                <h2 className="">Grandes Projetos Merecem Grande Qualidade!</h2>
                                             </div>
 
                                             <div>
-                                                <h2 className="text-center">Personalize com Estilo – Experimente a Sublimação!!</h2>
+                                                <h2 className="">Personalize com Estilo – Experimente a Sublimação!!</h2>
                                             </div>
                                             <div>
-                                                <h2 className="text-center">Versatilidade e Durabilidade com Serigrafia!</h2>
+                                                <h2 className="">Versatilidade e Durabilidade com Serigrafia!</h2>
                                             </div>
                                            
 

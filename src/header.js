@@ -36,21 +36,21 @@ export default function Header() {
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="topbar-left text-lg-start text-center">
-                                <span className="off"><i className="fal fa-phone" /></span>
-                                <span>+258 84 678 6350 </span>
+                                <img src="./img/cell.png" className="flaticon-t-shirt icon-navbar"/>
+                                <b>+258 84 678 6350 </b>
                             </div>
                         </div>
                         <div className="col-lg-6">
                             <ul className="topbar-right justify-content-center justify-content-lg-end">
                                 <li>
-                                    <i className="fal fa-user" /> <b>MInha Conta</b>
+                                <img src="./img/user.png" className="flaticon-t-shirt icon-navbar"/><b>Minha Conta</b>
                                 </li>
                                 <li className="social-style-one">
-                                    <i className="fab fa-facebook-f" aria-hidden="true" /><b>Meus pedidos</b>
+                                <img src="./img/list.png" className="flaticon-t-shirt icon-navbar"/><b>Meus pedidos</b>
                                 </li>
 
                                 <li className="social-style-one">
-                                    <i className="fab fa-logout" aria-hidden="true" /><b>Seja Bem-vindo</b>
+                                <img src="./img/exit.png" className="flaticon-t-shirt icon-navbar"/><b>Seja Bem-vindo</b>
                                 </li>
                             </ul>
                         </div>
@@ -157,13 +157,27 @@ export default function Header() {
                         </button>
                         
                        <Link href="contact.html" className="theme-btn style-two">
-                            INICIAR<i className="far fa-long-arrow-right" />
+                            Entrar na loja<i className="far fa-long-arrow-right" />
                         </Link>
                         <div className="menu-sidebar">
                             <button>
-                                <i className="far fa-ellipsis-h" />
-                                <i className="far fa-ellipsis-h" />
-                                <i className="far fa-ellipsis-h" />
+                                <img src="./img/wts.png" className="flaticon-t-shirt icon-social"/>
+                            </button>
+
+                            <button>
+                                <img src="./img/fb.png" className="flaticon-t-shirt icon-social"/>
+                            </button>
+
+                            <button>
+                                <img src="./img/in.png" className="flaticon-t-shirt icon-social"/>
+                            </button>
+
+                            <button>
+                                <img src="./img/ig.png" className="flaticon-t-shirt icon-social"/>
+                            </button>
+
+                            <button>
+                                <img src="./img/yt.png" className="flaticon-t-shirt icon-social"/>
                             </button>
                         </div>
                     </div>
