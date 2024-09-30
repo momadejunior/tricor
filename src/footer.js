@@ -3,36 +3,39 @@ export default function Footer(){
         <>
             {/*<!-- footer top start -->*/}
         <div class="footer-top pt-100">
-            <div class="container">
+            
+            <div class="container partners">
+            <h2 class="text-center color">Parceiros</h2>
                 <div class="footer-top-projects">
                     <div class="footer-project-item wow fadeInUp delay-0-2s">
-                        <img src="assets/images/footer/gallery1.jpg" alt="Gallery"/>
+                    <img src="./img/imeb.png" alt="Gallery"/>
                         <div class="content">
-                            <h6><a href="project-details.html">Card Printing</a></h6>
+                            {/* <h6><a href="project-details.html">Card Printing</a></h6> */}
                         </div>
                     </div>
                     <div class="footer-project-item wow fadeInUp delay-0-3s">
-                        <img src="assets/images/footer/gallery2.jpg" alt="Gallery"/>
+                    <img src="./img/proeng.png" alt="Gallery"/>
+                        
                         <div class="content">
-                            <h6><a href="project-details.html">Card Printing</a></h6>
+                            {/* <h6><a href="project-details.html">Card Printing</a></h6> */}
                         </div>
                     </div>
                     <div class="footer-project-item wow fadeInUp delay-0-4s">
-                        <img src="assets/images/footer/gallery3.jpg" alt="Gallery"/>
+                    <img src="./img/mini-basquete.png" alt="Gallery"/>
                         <div class="content">
-                            <h6><a href="project-details.html">Card Printing</a></h6>
+                            {/* <h6><a href="project-details.html">Card Printing</a></h6> */}
                         </div>
                     </div>
                     <div class="footer-project-item wow fadeInUp delay-0-5s">
-                        <img src="assets/images/footer/gallery4.jpg" alt="Gallery"/>
+                    <img src="./img/still-standing.png" alt="Gallery"/>
                         <div class="content">
-                            <h6><a href="project-details.html">Card Printing</a></h6>
+                            {/* <h6><a href="project-details.html">Card Printing</a></h6> */}
                         </div>
                     </div>
                     <div class="footer-project-item wow fadeInUp delay-0-6s">
-                        <img src="assets/images/footer/gallery5.jpg" alt="Gallery"/>
+                    <img src="./img/infiniart.png" alt="Gallery"/>
                         <div class="content">
-                            <h6><a href="project-details.html">Card Printing</a></h6>
+                            {/* <h6><a href="project-details.html">Card Printing</a></h6> */}
                         </div>
                     </div>
                 </div>
