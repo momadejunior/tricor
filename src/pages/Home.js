@@ -249,7 +249,7 @@ export default function Home() {
                         <div className="col-lg-6">
                             <div className="about-images rmb-65">
                                 <div className="row align-items-end justify-content-center">
-                                    <img src="./assets/images/Imagens/photos/interracial.jpg" alt="About" />
+                                    <img src="./img/interracial.jpg" alt="About" />
                                 </div>
                                 <div className="circle-shapes">
                                     <div className="shape-inner">
