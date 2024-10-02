@@ -111,7 +111,7 @@ export default function Header() {
                                 </ul>
                             </li> */}
                             <li className="menu-item-has-children">
-                                <Link to="/shop">Loja</Link>
+                                {/* <Link to="/shop">Loja</Link> */}
                                 {/*<ul className="sub-menu">
                                     <li><Link href="shop.html">Shop One</Link></li>
                                     <li><Link href="shop2.html">Shop Two</Link></li>
@@ -156,7 +156,7 @@ export default function Header() {
                             <i className="far fa-shopping-basket" />
                         </button>
                         
-                       <Link href="contact.html" className="theme-btn style-two">
+                       <Link to="/shop" className="theme-btn style-two">
                             Entrar na loja<i className="far fa-long-arrow-right" />
                         </Link>
                         <div className="menu-sidebar">

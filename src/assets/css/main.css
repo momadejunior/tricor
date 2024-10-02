@@ -15,7 +15,7 @@ body{
 }
 
 .hero-area{
-    background:url('../img/bg.jpg');
+    background:#eee;
     background-size: cover;
 }
 

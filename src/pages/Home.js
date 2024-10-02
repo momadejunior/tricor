@@ -60,22 +60,11 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        {/* <div className="col-lg-6">
-                            <div className="hero-images wow fadeInLeft delay-0-2s">
-                                <img className="w-100" src="assets/images/hero/hero-right.jpg" alt="Hero Image" />
-                                <img className="image-one wow fadeInRight delay-0-6s" src="assets/images/hero/hero-1.png" alt="Hero Image" />
-                                <img className="image-two wow fadeInDown delay-0-8s" src="assets/images/hero/hero-2.png" alt="Hero Image" />
-                                <div className="circle-shapes">
-                                    <div className="shape-inner">
-                                        <span className="dot-one"></span>
-                                        <span className="dot-two"></span>
-                                        <span className="dot-three"></span>
-                                        <span className="dot-four"></span>
-                                        <span className="dot-five"></span>
-                                    </div>
-                                </div>
+                        <div className="col-lg-6">
+                            <div className="wow fadeInLeft delay-0-2s">
+                                <img className="img-fluid" src="./img/services.png" alt="Hero Image" />
                             </div>
-                        </div>*/}
+                        </div>
                     </div>
                 </div>
             </div>
