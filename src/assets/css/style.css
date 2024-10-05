@@ -6105,7 +6105,7 @@ h1, h2, h3, h4, h5, h6, .tab-btns-one .nav-link .title {
     display: block;
     font-size: 48px;
     font-weight: 500;
-    text-align: left;
+    text-align: center;
     margin-bottom: 35px; }
     @media only screen and (max-width: 375px) {
       .pricing-plan-item .price {
@@ -6115,7 +6115,7 @@ h1, h2, h3, h4, h5, h6, .tab-btns-one .nav-link .title {
       font-size: 22px; }
     .pricing-plan-item .price:after {
       font-size: 16px;
-      content: '/todos os pedidos';
+      content: '/Descontos';
       color: #7e7e7e; }
 
 /*******************************************************/

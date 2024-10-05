@@ -56,7 +56,7 @@ export default function Home() {
                                 <p className='white'>Oferecemos serviços personalizados e produtos de alta qualidade, adira e descubra como podemos ajudá-lo a destacar sua marca.</p>
                                 
                                 <div className="hero-btns pt-25 wow fadeInUp delay-0-4s">
-                                    <Link to="team.html" className="theme-btn">SOLICITA ORCAMENTO<i className="far fa-long-arrow-right"></i></Link>
+                                    <Link to="team.html" className="theme-btn">SOLICITAR ORCAMENTO<i className="far fa-long-arrow-right"></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -249,7 +249,7 @@ export default function Home() {
                         <div className="col-lg-6">
                             <div className="about-images rmb-65">
                                 <div className="row align-items-end justify-content-center">
-                                    <img src="./img/interracial.jpg" alt="About" />
+                                    <img src="./assets/images/Imagens/photos/interracial.jpg" alt="About" />
                                 </div>
                                 <div className="circle-shapes">
                                     <div className="shape-inner">

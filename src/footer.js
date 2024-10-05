@@ -5,7 +5,7 @@ export default function Footer(){
         <div class="footer-top pt-100">
             
             <div class="container partners">
-            <h2 class="text-center color">Parceiros</h2>
+            <h2 class="text-center color">Nossos Parceiros</h2>
                 <div class="footer-top-projects">
                     <div class="footer-project-item wow fadeInUp delay-0-2s">
                     <img src="./img/imeb.png" alt="Gallery"/>
@@ -52,10 +52,11 @@ export default function Footer(){
                             </div>
                             <p>Sit amet consectetur adipiscing elit, sed do eiusmod temp didunt ut labore dolore magna aliqua spsum suspendis facilisis.</p>
                             <div class="social-style-two mt-15">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-dribbble"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            <img src="./img/wts.png" className="flaticon-t-shirt icon-social"/>
+                            <img src="./img/fb.png" className="flaticon-t-shirt icon-social"/>
+                            <img src="./img/in.png" className="flaticon-t-shirt icon-social"/>
+                            <img src="./img/ig.png" className="flaticon-t-shirt icon-social"/>
+                            <img src="./img/yt.png" className="flaticon-t-shirt icon-social"/>
                             </div>
                         </div>
                     </div>

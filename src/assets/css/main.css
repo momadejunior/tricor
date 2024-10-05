@@ -112,3 +112,21 @@ p{
 .text-center{
     text-align: center;
 }
+
+.items-brand {
+	display: flex;
+	align-items: center;
+}
+
+.input-contact {
+	display: flex;
+	gap: 20px;
+}
+
+.service-item img {
+	width: 86px;
+}
+
+.service-item:hover img {
+	filter: brightness(300%);
+}

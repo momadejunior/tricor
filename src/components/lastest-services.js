@@ -92,7 +92,8 @@ export default  function LastestService(){
                                     <div className="col-md-6">
                                         <div className="service-item wow fadeInDown delay-0-4s">
                                             <div className="icon">
-                                                <i className="flaticon-3d-printer"></i>
+                                                {/* <i className="flaticon-3d-printer"></i> */}
+                                                <img src="./img/tshirt-print.png"/>
                                             </div>
                                             <h3><a href="service-details.html">Serigrafia para T-Shirts</a></h3>
                                             <p>É versátil para imprimir em materiais diversos e em grandes volumes.</p>
@@ -114,7 +115,8 @@ export default  function LastestService(){
                                     <div className="col-md-6">
                                         <div className="service-item wow fadeInUp delay-0-6s">
                                             <div className="icon">
-                                                <i className="flaticon-focus"></i>
+                                                {/* <i className="flaticon-focus"></i> */}
+                                                <img src="./img/sublimacao.png"/>
                                             </div>
                                             <h3><a href="service-details.html">Sublimação</a></h3>
                                             <p>É ideal para personalização em tecidos e outros materiais revestidos.</p>
