@@ -110,18 +110,20 @@ export default function Header() {
                                     <li><Link href="project-details.html">Projects Details</Link></li>
                                 </ul>
                             </li> */}
-                            <li className="menu-item-has-children">
-                                {/* <Link to="/shop">Loja</Link> */}
-                                {/*<ul className="sub-menu">
+
+                            {/* <li className="menu-item-has-children">
+                                <Link to="/shop">Loja</Link>
+                                <ul className="sub-menu">
                                     <li><Link href="shop.html">Shop One</Link></li>
                                     <li><Link href="shop2.html">Shop Two</Link></li>
                                     <li><Link href="shop3.html">Shop Three</Link></li>
                                     <li><Link href="product-details.html">Single Product_1</Link></li>
                                     <li><Link href="product-details2.html">Single Product_2</Link></li>
-                                </ul>*/}
-                            </li>
+                                </ul>
+                            </li> */}
+                            
                             <li className="menu-item-has-children">
-                            <li><Link to="/contact">Fala connosco</Link></li>
+                            <Link to="/contact">Fala connosco</Link>
                                 {/*<ul className="sub-menu">
                                     <li><Link href="shop.html">Shop One</Link></li>
                                     <li><Link href="shop2.html">Shop Two</Link></li>

@@ -41,7 +41,7 @@ export default  function LastestService(){
                         <div className="row align-items-center">
                             <div className="col-xl-4 col-lg-7">
                                 <div className="service-content rel p-100 py-130 rpb-100 wow fadeInUp delay-0-2s">
-                                    <div className="section-title mb-30">
+                                    <div className="section-title mb-30 section-dot">
                                        {/*  <span className="sub-title mb-15">Latest Services</span> */}
                                         <Slider {...settings}>
                                             <div>
@@ -81,7 +81,8 @@ export default  function LastestService(){
                                     <div className="col-md-6">
                                         <div className="service-item wow fadeInDown delay-0-4s">
                                             <div className="icon">
-                                                <i className="flaticon-print"></i>
+                                                {/* <i className="flaticon-print"></i> */}
+                                                <img src="./img/digital.png"/>
                                             </div>
                                             <h3><a href="service-details.html">Impressão Digital</a></h3>
                                             <p>É ideal para trabalhos de pequenas tiragens e alta personalização.</p>
@@ -104,7 +105,8 @@ export default  function LastestService(){
                                     <div className="col-md-6">
                                         <div className="service-item wow fadeInUp delay-0-6s">
                                             <div className="icon">
-                                                <i className="flaticon-print-1"></i>
+                                              {/*   <i className="flaticon-print-1"></i> */}
+                                              <img src="./img/offset-color.png"/>
                                             </div>
                                             <h3><a href="service-details.html">Impressão Offset</a></h3>
                                             <p>É mais adequada para grandes tiragens e trabalhos de alta qualidade.</p>

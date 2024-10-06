@@ -17,7 +17,7 @@ export default function ContactUS(){
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-4 align-self-center">
+                    <div className="col-xl-4 quote-contact-us align-self-center">
                         <div className="text-white py-55 wow fadeInUp delay-0-2s">
                             <div className="section-title mb-35">
                                 <span className="sub-title mb-10">Estamos aqui para ajudar</span>

@@ -121,6 +121,7 @@ p{
 .input-contact {
 	display: flex;
 	gap: 20px;
+	flex-wrap: wrap;
 }
 
 .service-item img {
@@ -129,4 +130,40 @@ p{
 
 .service-item:hover img {
 	filter: brightness(300%);
+}
+
+
+
+.slick-arrow.slick-next {
+	position: absolute;
+	top: 36%;
+	right:-1%;
+}
+
+.slick-arrow.slick-prev {
+	position: absolute;
+	z-index: 1;
+	top: 36%;
+	left:;
+}
+
+.arrow-img {
+	width: 36px;
+}
+
+
+
+.section-dot .slick-dots {
+	display: flex !important;
+	position: relative;
+	left: -190px;
+}
+
+
+
+@media (max-width:600px) {
+    .text-white.py-55.wow.fadeInUp.delay-0-2s {
+        width: 90%;
+        margin: 0 auto;
+    }
 }

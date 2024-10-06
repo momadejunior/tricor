@@ -9,15 +9,28 @@ import LastestService from '../components/lastest-services';
 import { Link } from 'react-router-dom';
 export default function Home() {
 
+    const CustomNextArrow = (props) => {
+        const { className, onClick } = props;
+        return <div className={`${className} custom-next`} onClick={onClick}><img src="./img/arrow-right.png" className="arrow-img"/></div>;
+    };
+    
+    const CustomPrevArrow = (props) => {
+        const { className, onClick } = props;
+        return <div className={`${className} custom-prev`} onClick={onClick}><img src="./img/arrow-left.png" className="arrow-img"/></div>;
+    };
+    
 
     const settings = {
         dots: true,
         infinite: true,
-        autoplay: false,
+        autoplay: true,
         speed: 1000,
         slidesToShow: 6,
         slidesToScroll: 2,
-        arrows: false,
+        arrows: true,
+        nextArrow: <CustomNextArrow />,
+        prevArrow: <CustomPrevArrow />,
+        
         responsive: [
             {
                 breakpoint: 1200,
@@ -49,7 +62,7 @@ export default function Home() {
             <div className="hero-area pt-145 pb-75 rel z-1">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-lg-5">
+                        <div className="col-lg-6">
                             <div className="hero-content rmb-55 wow fadeInUp delay-0-2s">
 
                                 <h1 className='title-hero'>Bem-vindo à TICOR, sua parceira em soluções de impressão.</h1>
@@ -93,83 +106,88 @@ export default function Home() {
                             </div>
                             <div className="what-we-provide-item wow fadeInUp delay-0-5s">
                             <img src="./img/livro.png"/>
-                                <h6><Link to="/services">Livro</Link></h6>
+                                <h6><Link to="/services">Livros</Link></h6>
                             </div>
                             <div className="what-we-provide-item wow fadeInUp delay-0-6s">
                             <img src="./img/tshirt.png"/>
-                                <h6><Link to="/services">T-shirt</Link></h6>
+                                <h6><Link to="/services">Camisetas</Link></h6>
                             </div>
                             <div className="what-we-provide-item wow fadeInUp delay-0-7s">
                             <img src="./img/pen.png"/>
-                                <h6><Link to="/services">Caneta</Link></h6>
+                                <h6><Link to="/services">Canetas</Link></h6>
                             </div>
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/banner.png"/>
-                                <h6><Link to="/services">Banner</Link></h6>
+                                <h6><Link to="/services">Banners</Link></h6>
                             </div>
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/cap.png"/>
-                                <h6><Link to="/services">Chapeu</Link></h6>
+                                <h6><Link to="/services">Bonés e Chapéus</Link></h6>
                             </div>
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/caixa.png"/>
-                                <h6><Link to="/services">Caixa</Link></h6>
+                                <h6><Link to="/services">Embalagens Personalizadas</Link></h6>
+                            </div>
+
+                            <div className="what-we-provide-item wow fadeInUp delay-0-8s">
+                            <img src="./img/card.png"/>
+                                <h6><Link to="/services">Cartões de Visita</Link></h6>
                             </div>
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/livreto.png"/>
-                                <h6><Link to="/services">Livreto</Link></h6>
+                                <h6><Link to="/services">Brochuras e Catálogos</Link></h6>
                             </div>
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/mug.png"/>
-                                <h6><Link to="/services">Chavena</Link></h6>
+                                <h6><Link to="/services">Chavena Mágica</Link></h6>
                             </div>
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/magazine.png"/>
-                                <h6><Link to="/services">Revista</Link></h6>
+                                <h6><Link to="/services">Revistas</Link></h6>
                             </div>
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/menus.png"/>
-                                <h6><Link to="/services">Menus</Link></h6>
+                                <h6><Link to="/services">Menus de Restaurantes</Link></h6>
                             </div>
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/stamp.png"/>
-                                <h6><Link to="/services">Carimbo</Link></h6>
+                                <h6><Link to="/services">Carimbos</Link></h6>
                             </div>
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/sacola.png"/>
-                                <h6><Link to="/services">Sacola</Link></h6>
+                                <h6><Link to="/services">Sacolas</Link></h6>
                             </div>
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/bebedouro.png"/>
-                                <h6><Link to="/services">Bebedouro</Link></h6>
+                                <h6><Link to="/services">Bebedouros</Link></h6>
                             </div>
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/recibo.png"/>
-                                <h6><Link to="/services">Recibo</Link></h6>
+                                <h6><Link to="/services">Recibos</Link></h6>
                             </div>
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/polo_tshirt.png"/>
-                                <h6><Link to="/services">Polo T-shirt</Link></h6>
+                                <h6><Link to="/services">Camisetas</Link></h6>
                             </div>
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/sacola_02.png"/>
-                                <h6><Link to="/services">Sacola</Link></h6>
+                                <h6><Link to="/services">Sacolas</Link></h6>
                             </div>
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/caixa_02.png"/>
-                                <h6><Link to="/services">Caixa</Link></h6>
+                                <h6><Link to="/services">Embalagens Personalizadas</Link></h6>
                             </div>
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
@@ -179,32 +197,32 @@ export default function Home() {
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/letterhead.png"/>
-                                <h6><Link to="/services">Papel Timbrado</Link></h6>
+                                <h6><Link to="/services">Papéis Timbrados</Link></h6>
                             </div>
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/envelope.png"/>
-                                <h6><Link to="/services">Envelope</Link></h6>
+                                <h6><Link to="/services">Envelopes</Link></h6>
                             </div>
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/door-hanger.png"/>
-                                <h6><Link to="/services">Cabide de Porta</Link></h6>
+                                <h6><Link to="/services">Cabide de Portas</Link></h6>
                             </div>
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/brochure.png"/>
-                                <h6><Link to="/services">Brochura</Link></h6>
+                                <h6><Link to="/services">Brochuras e Catálogos</Link></h6>
                             </div>
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/saco_plasticos.png"/>
-                                <h6><Link to="/services">Saco Plastico</Link></h6>
+                                <h6><Link to="/services">Saco Plasticos</Link></h6>
                             </div>
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/calendario.png"/>
-                                <h6><Link to="/services">Calendario</Link></h6>
+                                <h6><Link to="/services">Calendários</Link></h6>
                             </div>
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
@@ -219,7 +237,7 @@ export default function Home() {
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/flyers.png"/>
-                                <h6><Link to="/services">Flyers</Link></h6>
+                                <h6><Link to="/services">Flyers e Panfletos</Link></h6>
                             </div>
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
@@ -229,7 +247,7 @@ export default function Home() {
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
                             <img src="./img/glass.png"/>
-                                <h6><Link to="/services">Garrafa</Link></h6>
+                                <h6><Link to="/services">Rótulos e Etiquetas</Link></h6>
                             </div>
 
                             <div className="what-we-provide-item wow fadeInUp delay-0-8s">
@@ -249,7 +267,7 @@ export default function Home() {
                         <div className="col-lg-6">
                             <div className="about-images rmb-65">
                                 <div className="row align-items-end justify-content-center">
-                                    <img src="./assets/images/Imagens/photos/interracial.jpg" alt="About" />
+                                    <img src="./img/interracial.jpg" alt="About" />
                                 </div>
                                 <div className="circle-shapes">
                                     <div className="shape-inner">

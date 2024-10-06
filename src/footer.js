@@ -100,7 +100,7 @@ export default function Footer(){
                         </div>
                         <div class="col-lg-6">
                             <div class="payment-method-image mb-15 text-center text-lg-end">
-                                <a href="#"><img src="assets/images/footer/payment-method.png" alt="Payment Method"/></a>
+                               {/*  <a href="#"><img src="assets/images/footer/payment-method.png" alt="Payment Method"/></a> */}
                             </div>
                         </div>
                     </div>
