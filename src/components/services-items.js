@@ -15,7 +15,7 @@ export default function ServicesItem(){
                     <div class="col-lg-6">
                         <div class="service-item-two wow fadeInUp delay-0-2s">
                             <div class="icon">
-                               <i class="flaticon-print"></i> 
+                                <img className="service-items" src="./img/digital.png"/>
                             </div>
                             <div class="content">
                                 <h3><a href="service-details.html">Impressão Digital</a></h3>
@@ -34,7 +34,7 @@ export default function ServicesItem(){
                     <div class="col-lg-6">
                         <div class="service-item-two wow fadeInUp delay-0-4s">
                             <div class="icon">
-                               <i class="flaticon-3d-printer"></i> 
+                            <img className="service-items" src="./img/tshirt-print.png"/>
                             </div>
                             <div class="content">
                                 <h3><a href="service-details.html">Impressão Offset</a></h3>
@@ -53,7 +53,7 @@ export default function ServicesItem(){
                     <div class="col-lg-6">
                         <div class="service-item-two wow fadeInUp delay-0-2s">
                             <div class="icon">
-                               <i class="flaticon-print-1"></i> 
+                                <img className="service-items" src="./img/offset-color.png"/>
                             </div>
                             <div class="content">
                                 <h3><a href="service-details.html">Serigrafia para T-Shirts</a></h3>
@@ -65,7 +65,7 @@ export default function ServicesItem(){
                     <div class="col-lg-6">
                         <div class="service-item-two wow fadeInUp delay-0-4s">
                             <div class="icon">
-                               <i class="flaticon-focus"></i> 
+                                <img className="service-items" src="./img/sublimacao.png"/>
                             </div>
                             <div class="content">
                                 <h3><a href="service-details.html">Sublimação</a></h3>

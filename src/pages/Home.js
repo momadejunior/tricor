@@ -88,7 +88,7 @@ export default function Home() {
                             <div className="about-content wow fadeInUp delay-0-2s">
                                 <div className="section-title mb-20">
                                     <span className="sub-title mb-15">Sobre Nós</span>
-                                    <p className="grey-ticor">somos a ticor, uma empresa mocambicana especializada em solucoes de impressao inovadors e personalizadas, dedicada a atender com excelencia desde pequenas empresas ate grandes corporacoes</p>
+                                    <p className="grey-ticor">A TICOR é uma empresa de soluções de impressão com sede em Moçambique, empenhada em oferecer soluções inovadoras e personalizadas.</p>
                                 </div>
                                 {/*<div className="experience-year mb-20">
                                     <h6>We Have More then</h6>
@@ -97,7 +97,7 @@ export default function Home() {
                                 </div>
                                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam eaquey ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo voluptatem quia voluptas</p>
                                 */}<div className="about-btns pt-5">
-                                    <Link to="about.html" className="theme-btn mt-20">Ler mais<i className="far fa-long-arrow-right"></i></Link>
+                                    <Link to="/about" className="theme-btn mt-20">Ler mais<i className="far fa-long-arrow-right"></i></Link>
                                     
                                 </div>
                             </div>

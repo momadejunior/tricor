@@ -164,6 +164,10 @@ p{
 	color: #7e7e7e;
 }
 
+.service-items{
+    width: 64px;
+}
+
 
 
 @media (max-width:600px) {

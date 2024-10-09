@@ -25,10 +25,10 @@ export default function ContactUS(){
                             </div>
                             <div className="input-contact">
                                 <div>
-                                    <a href="projects.html" className="theme-btn">Peça um orçamento<i className="far fa-long-arrow-right"></i></a>
+                                    <a href="mailto:print@ticor.co.mz" className="theme-btn">Peça um orçamento<i className="far fa-long-arrow-right"></i></a>
                                 </div>
                                 <div>
-                                    <a href="projects.html" className="theme-btn">Entra na loja<i className="far fa-long-arrow-right"></i></a>
+                                    <a href="/shop" className="theme-btn">Entra na loja<i className="far fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
