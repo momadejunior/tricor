@@ -291,7 +291,8 @@ input[type=checkbox], input[type=radio] {
       font-size: 18px; } }
 
 .section-title h2 {
-  text-transform: capitalize; }
+ /*  text-transform: ;  */}
+  
   @media only screen and (max-width: 767px) {
     .section-title h2 {
       font-size: 35px; } }
@@ -459,17 +460,17 @@ a.theme-btn {
   .social-style-two a {
     width: 40px;
     height: 40px;
-    background: white;
+/*     background: white; */
     line-height: 40px;
     border-radius: 50%;
     text-align: center;
-    -webkit-box-shadow: 10px 0 60px rgba(132, 132, 132, 0.5);
-    box-shadow: 10px 0 60px rgba(132, 132, 132, 0.5); }
+  /*   -webkit-box-shadow: 10px 0 60px rgba(132, 132, 132, 0.5);
+    box-shadow: 10px 0 60px rgba(132, 132, 132, 0.5);*/ } 
     .social-style-two a:not(:last-child) {
       margin-right: 10px; }
     .social-style-two a:hover {
       color: white;
-      background: #dd1d26; }
+      /* background: #dd1d26;  */}
 
 /*** Preloader style ** */
 .preloader {
@@ -6106,17 +6107,18 @@ h1, h2, h3, h4, h5, h6, .tab-btns-one .nav-link .title {
     font-size: 48px;
     font-weight: 500;
     text-align: center;
-    margin-bottom: 35px; }
+    line-height: 1;
+  /*   margin-bottom: 35px; */ }
     @media only screen and (max-width: 375px) {
       .pricing-plan-item .price {
         font-size: 38px; } }
     .pricing-plan-item .price:before {
       content: '';
       font-size: 22px; }
-    .pricing-plan-item .price:after {
+   /*  .pricing-plan-item .price:after {
       font-size: 16px;
       content: '/Descontos';
-      color: #7e7e7e; }
+      color: #7e7e7e; } */
 
 /*******************************************************/
 /*******************  18. Blog Area ********************/

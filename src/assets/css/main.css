@@ -159,6 +159,11 @@ p{
 	left: -190px;
 }
 
+.desconto{
+	font-size: 16px;
+	color: #7e7e7e;
+}
+
 
 
 @media (max-width:600px) {

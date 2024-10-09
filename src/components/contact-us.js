@@ -21,7 +21,7 @@ export default function ContactUS(){
                         <div className="text-white py-55 wow fadeInUp delay-0-2s">
                             <div className="section-title mb-35">
                                 <span className="sub-title mb-10">Estamos aqui para ajudar</span>
-                                <h2 className="title-contact-us">Precisas de solucoes de impressao ou materiais para o teu negocios?</h2>
+                                <h2 className="title-contact-us">Precisas de soluções de impressão ou materiais para o teu negócios?</h2>
                             </div>
                             <div className="input-contact">
                                 <div>

@@ -68,14 +68,14 @@ export default function About(){
   </div>
 
 
-  <div className="video-fact-counter bgc-lighter" style={{backgroundImage: 'url(assets/images/about/about-counter-bg.png)'}}>
+  {/* <div className="video-fact-counter bgc-lighter" style={{backgroundImage: 'url(assets/images/about/about-counter-bg.png)'}}>
     <div className="container">
       <div className="about-video about-page-video">
         <img src="assets/images/about/about-page-video.jpg" alt="About" />
         <a href="https://www.youtube.com/watch?v=9Y7ma241N8k" className="mfp-iframe video-play"><i className="fas fa-play" /></a>
-      </div>
+  </div>
 
-      <Statistics/>
+      
       
     </div>
     <div className="circle-shapes">
@@ -88,14 +88,14 @@ export default function About(){
       </div>
     </div>
   </div>
-
+ */}
 
  {/*Our team*/}
 
 
  {/*end here*/}
 
-
+{/* 
   <div className="why-choose-three pt-120 pb-100 rel z-1 bgc-black text-white">
     <div className="container">
       <div className="services-inner ">
@@ -161,7 +161,7 @@ export default function About(){
       </div>
     </div>
   </div>
-
+ */}
 
 
 

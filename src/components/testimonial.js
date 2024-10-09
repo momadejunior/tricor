@@ -1,8 +1,11 @@
+import { useEffect } from 'react';
 import Slider from 'react-slick';
 
 
 
 export default function Testimonial(){
+
+
 
     const settings = {
         dots: true,
@@ -35,6 +38,20 @@ export default function Testimonial(){
         ],
     };
 
+    const url = "https://us-west-2.cdn.hygraph.com/content/cm1z3ff5507ct08w75zh4fqp0/master";
+    const query =``;
+
+    useEffect(()=>{
+        fetch(url, {
+            method: "POST", // Use 'POST' for GraphQL queries
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ query }),
+          })
+        .then()
+        .then()
+    })
 
     return(
         <>

@@ -163,23 +163,23 @@ export default function Header() {
                         </Link>
                         <div className="menu-sidebar">
                             <button>
-                                <img src="./img/wts.png" className="flaticon-t-shirt icon-social"/>
+                            <a href="https://api.whatsapp.com/send?phone=+258871701039&text=Ola%20Tricor." target="__blank"><img src="./img/wts.png" className="flaticon-t-shirt icon-social"/></a>
                             </button>
 
                             <button>
-                                <img src="./img/fb.png" className="flaticon-t-shirt icon-social"/>
+                                <a target="_blank" href="https://web.facebook.com/profile.php?id=61566302444827"><img src="./img/fb.png" className="flaticon-t-shirt icon-social"/></a>
                             </button>
 
                             <button>
-                                <img src="./img/in.png" className="flaticon-t-shirt icon-social"/>
+                                <a target="_blank" href="https://www.linkedin.com/company/105152594/admin/dashboard/"><img src="./img/in.png" className="flaticon-t-shirt icon-social"/></a>
                             </button>
 
                             <button>
-                                <img src="./img/ig.png" className="flaticon-t-shirt icon-social"/>
+                                <a target="_blank" href="https://www.instagram.com/ticor_printsolutions?igsh=YzljYTk1ODg3Zg=="><img src="./img/ig.png" className="flaticon-t-shirt icon-social"/></a>
                             </button>
 
                             <button>
-                                <img src="./img/yt.png" className="flaticon-t-shirt icon-social"/>
+                            <a target="_blank" href="https://www.youtube.com/@TicorPrintSolution"><img src="./img/yt.png" className="flaticon-t-shirt icon-social"/></a>
                             </button>
                         </div>
                     </div>

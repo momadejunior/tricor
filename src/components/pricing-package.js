@@ -22,7 +22,10 @@ export default function PricingPackage() {
                                     <li>Testes de Impressão <i className="fas fa-check"></i></li>
                                     <li>Suporte Técnico <i className="fas fa-check"></i></li>
                                 </ul>
-                                <span className="price">05%</span>
+                                <div>
+                                    <span className="price">05%</span>
+                                    <span className="desconto">Desconto</span>
+                                </div>
                                 <a href="#" className="theme-btn style-three">Aderir ao pacote <i className="far fa-long-arrow-right"></i></a>
                             </div>
                         </div>
@@ -38,7 +41,10 @@ export default function PricingPackage() {
                                     <li>Revisões ilimitadas <i className="fas fa-check"></i></li>
                                     <li>Relatório sobre Tendências <i className="fas fa-check"></i></li>
                                 </ul>
-                                <span className="price">07%</span>
+                                <div>
+                                    <span className="price">07%</span>
+                                    <span className="desconto">Desconto</span>
+                                </div>
                                 <a href="#" className="theme-btn style-three">Aderir ao pacote <i className="far fa-long-arrow-right"></i></a>
                             </div>
                         </div>
@@ -55,7 +61,11 @@ export default function PricingPackage() {
                                     <li>Relatório sobre Tendências <i className="fas fa-check"></i></li>
                                     <li>Design de Estacionário <i className="fas fa-check"></i></li>
                                 </ul>
-                                <span className="price">10%</span>
+                                <div>
+                                    <span className="price">10%</span>
+                                    <span className="desconto">Desconto</span>
+                                </div>
+
                                 <a href="#" className="theme-btn style-three">Aderir ao pacote <i className="far fa-long-arrow-right"></i></a>
                             </div>
                         </div>
