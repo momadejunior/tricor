@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@lottiefiles/dotlottie-react": "^0.9.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -12,6 +13,7 @@
     "jquery": "^3.7.1",
     "jquery-nice-select": "^1.1.0",
     "jquery-ui": "^1.13.3",
+    "lottie-react": "^2.4.0",
     "magnific-popup": "^1.2.0",
     "react": "^18.3.1",
     "react-circular-progressbar": "^2.1.0",

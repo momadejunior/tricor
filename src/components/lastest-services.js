@@ -95,7 +95,7 @@ export default  function LastestService(){
                                             <div className="icon">
                                                 {/* <i className="flaticon-3d-printer"></i> */}
                                                 
-                                                <img src="./img/offset-color.png"/>
+                                                <img src="./img/tshirt-print.png"/>
                                             </div>
                                             <h3><a href="service-details.html">Serigrafia para T-Shirts</a></h3>
                                             <p>É versátil para imprimir em materiais diversos e em grandes volumes.</p>
@@ -107,7 +107,8 @@ export default  function LastestService(){
                                         <div className="service-item wow fadeInUp delay-0-6s">
                                             <div className="icon">
                                               {/*   <i className="flaticon-print-1"></i> */}
-                                              <img src="./img/tshirt-print.png"/>
+                                           
+                                              <img src="./img/offset-color.png"/>
                                             </div>
                                             <h3><a href="service-details.html">Impressão Offset</a></h3>
                                             <p>É mais adequada para grandes tiragens e trabalhos de alta qualidade.</p>

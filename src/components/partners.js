@@ -102,11 +102,9 @@ export default function Partners() {
         <div className="">
           <Slider {...settings}>
             {logos.map((partner) => (
-            <div>
               <div key={partner.logo.id} className="footer-project-item">
-                <img src={partner.logo.url} style={{width:"100%",}} alt="Partner Logo" />
+                <img src={partner.logo.url} style={{ width: "100%" }} alt="Partner Logo" />
               </div>
-            </div>
             ))}
           </Slider>
         </div>

@@ -19,13 +19,13 @@ import PricingPackage from "./components/pricing-package";
 import Testimonial from "./components/testimonial";
 import LastestProject from "./components/lastest-project";
 import ContactUS from "./components/contact-us";
+import CartPage from "./pages/cart";
+import { CartProvider } from "./components/cartcontext";
+import CheckoutPage from "./pages/checkout";
+import ConfirmationPage from "./pages/confirmation";
 
 export default function Header() { 
 
-
-    const result = 'ola';
-
-    
     return (
         <>
             <div
@@ -37,7 +37,7 @@ export default function Header() {
                         <div className="col-lg-6">
                             <div className="topbar-left text-lg-start text-center">
                                 <img src="./img/cell.png" className="flaticon-t-shirt icon-navbar"/>
-                                <b>+258 84 678 6350 </b>
+                                <b>+258 87 170 1039</b>
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -59,7 +59,7 @@ export default function Header() {
             </div>
 
 
-
+        <CartProvider>
         	<Router>
             <nav className="navbar style-one navbar-area navbar-expand-lg py-20">
                 <div className="container container-1570">
@@ -155,7 +155,7 @@ export default function Header() {
                             <i className="far fa-search" />
                         </button>
                         <button>
-                            <i className="far fa-shopping-basket" />
+                           <Link to="/cart"> <i className="far fa-shopping-basket" /></Link>
                         </button>
                         
                        <Link to="/shop" className="theme-btn style-two">
@@ -163,23 +163,23 @@ export default function Header() {
                         </Link>
                         <div className="menu-sidebar">
                             <button>
-                            <a href="https://api.whatsapp.com/send?phone=+258871701039&text=Ola%20Tricor." target="__blank"><img src="./img/wts.png" className="flaticon-t-shirt icon-social"/></a>
+                            <Link href="https://api.whatsapp.com/send?phone=+258871701039&text=Ola%20Tricor." target="__blank"><img src="./img/wts.png" className="flaticon-t-shirt icon-social"/></Link>
                             </button>
 
                             <button>
-                                <a target="_blank" href="https://web.facebook.com/profile.php?id=61566302444827"><img src="./img/fb.png" className="flaticon-t-shirt icon-social"/></a>
+                                <Link target="_blank" href="https://web.facebook.com/profile.php?id=61566302444827"><img src="./img/fb.png" className="flaticon-t-shirt icon-social"/></Link>
                             </button>
 
                             <button>
-                                <a target="_blank" href="https://www.linkedin.com/company/105152594/admin/dashboard/"><img src="./img/in.png" className="flaticon-t-shirt icon-social"/></a>
+                                <Link target="_blank" href="https://www.linkedin.com/company/105152594/admin/dashboard/"><img src="./img/in.png" className="flaticon-t-shirt icon-social"/></Link>
                             </button>
 
                             <button>
-                                <a target="_blank" href="https://www.instagram.com/ticor_printsolutions?igsh=YzljYTk1ODg3Zg=="><img src="./img/ig.png" className="flaticon-t-shirt icon-social"/></a>
+                                <Link target="_blank" href="https://www.instagram.com/ticor_printsolutions?igsh=YzljYTk1ODg3Zg=="><img src="./img/ig.png" className="flaticon-t-shirt icon-social"/></Link>
                             </button>
 
                             <button>
-                            <a target="_blank" href="https://www.youtube.com/@TicorPrintSolution"><img src="./img/yt.png" className="flaticon-t-shirt icon-social"/></a>
+                            <Link target="_blank" href="https://www.youtube.com/@TicorPrintSolution"><img src="./img/yt.png" className="flaticon-t-shirt icon-social"/></Link>
                             </button>
                         </div>
                     </div>
@@ -195,13 +195,18 @@ export default function Header() {
                     <Route path="/service-details" element={<ServiceDetails/>}/>
                     <Route path="/blog-details" element={<BlogDetails/>}/>
                     <Route path="/team" element={<Teams/>}/>
-                    <Route path="/product-details" element={<ProductDetails/>}/>
+                    <Route path="/product-details/:id" element={<ProductDetails/>}/>
                     <Route path="/faqs" element={<Faqs/>}/>
                     <Route path="/contact" element={<Contacts/>}/>
                     <Route path="/404" element={<Error/>}/>
                     <Route path="/project-details" element={<ProjectDetails/>}/>
+                    <Route path="/cart" element={<CartPage/>}/>
+                    <Route path="/checkout" element={<CheckoutPage/>}/>
+                    <Route path="/confirmation" element={<ConfirmationPage/>}/>
+
                 </Routes>
             </Router>
+            </CartProvider>
         </>
     )
 }

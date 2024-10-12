@@ -1,9 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import { Link } from 'react-router-dom';
 import ContactUS from "../components/contact-us";
+import { CartContext } from '../components/cartcontext';
 
 export default function Shop() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const { addToCart } = useContext(CartContext); // Use CartContext to access addToCart function
 
   const url = "https://us-west-2.cdn.hygraph.com/content/cm1z3ff5507ct08w75zh4fqp0/master";
   const query = `
@@ -36,7 +40,6 @@ export default function Shop() {
           body: JSON.stringify({ query }),
         });
         const { data } = await response.json();
-        console.log(data); // Check the API response
         setProducts(data.productos);
       } catch (error) {
         console.error('Error fetching products:', error);
@@ -44,7 +47,7 @@ export default function Shop() {
         setLoading(false);
       }
     };
-    
+
     fetchProducts();
   }, []);
 
@@ -60,7 +63,7 @@ export default function Shop() {
             <h2 className="page-title wow fadeInUp delay-0-2s">Loja</h2>
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb wow fadeInUp delay-0-4s">
-                <li className="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li className="breadcrumb-item"><a href="/">Home</a></li>
                 <li className="breadcrumb-item active">Loja</li>
               </ol>
             </nav>
@@ -76,13 +79,13 @@ export default function Shop() {
               <button type="submit" className="searchbutton far fa-search"></button>
             </form>
             <div className="sort-text">
-              Showing 1 - 12 of {products.length} Results
+              Showing 1 - {products.length} of {products.length} Results
             </div>
             <div className="products-dropdown">
               <select>
                 <option value="default" selected>Sort by Newness</option>
                 <option value="old">Sort by Oldest</option>
-                <option value="hight-to-low">High To Low</option>
+                <option value="high-to-low">High To Low</option>
                 <option value="low-to-high">Low To High</option>
               </select>
             </div>
@@ -96,21 +99,36 @@ export default function Shop() {
               <div key={product.id} className="col-xl-3 col-lg-4 col-sm-6">
                 <div className="product-item wow fadeInUp delay-0-2s">
                   <div className="image">
-                    {/* Check if both badge and descricaoDoBadge are available */}
-                    {product.badge && product.descricaoDoBadge ? (
+                    {product.badge && product.descricaoDoBadge && (
                       <span className={`badge ${product.badge}`}>{product.descricaoDoBadge}</span>
-                    ) : null}
+                    )}
                     <img src={product.imagemDoProducto.url} alt={product.tituloDoProducto} />
                   </div>
                   <div className="content">
                     <div className="title-price">
-                      <h5><a href="#">{product.tituloDoProducto}</a></h5>
-                      <div className="price">{product.preco ? `${product.preco}` : 'Price not available'}MT</div>
+                      <h5><Link to="/product-details">{product.tituloDoProducto}</Link></h5>
+                      <div className="price">{product.preco ? `${product.preco} MT` : 'Price not available'}</div>
                     </div>
                     <div className="social-style-two">
-                      <a href="#"><i className="far fa-shopping-cart"></i></a>
+                      {/* Add to Cart Button */}
+                      <a
+                        onClick={() =>
+                          addToCart(
+                            {
+                              id: product.id,
+                              name: product.tituloDoProducto,
+                              price: product.preco,
+                              image: product.imagemDoProducto.url,
+                            },
+                            1 // Quantity
+                          )
+                        }
+                        className="cart-btn"
+                      >
+                        <i className="far fa-shopping-cart"></i>
+                      </a>
                       <a href="#"><i className="far fa-heart"></i></a>
-                      <a href="#"><i className="far fa-eye"></i></a>
+                      <Link to={`/product-details/${product.id}`}><i className="far fa-eye"></i></Link>
                       <a href="#"><i className="far fa-star"></i></a>
                     </div>
                   </div>
@@ -123,10 +141,7 @@ export default function Shop() {
               <span className="page-link"><i className="fas fa-chevron-left"></i></span>
             </li>
             <li className="page-item active">
-              <span className="page-link">
-                01
-                <span className="sr-only">(current)</span>
-              </span>
+              <span className="page-link">01</span>
             </li>
             <li className="page-item"><a className="page-link" href="#">02</a></li>
             <li className="page-item"><a className="page-link" href="#">03</a></li>
