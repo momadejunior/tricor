@@ -57,7 +57,7 @@ export default function HeroSection() {
 
                 <div className="hero-btns pt-25 wow fadeInUp delay-0-4s">
                   <Link to="mailto:print@ticor.co.mz" className="theme-btn">
-                    SOLICITAR ORCAMENTO
+                    Solicitar Orçamento
                     <i className="far fa-long-arrow-right"></i>
                   </Link>
                 </div>
