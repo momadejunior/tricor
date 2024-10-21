@@ -125,7 +125,6 @@ Lastest Project here*/}
 
 
             {/*Testimonial section inside here*/}
-
             <Testimonial />
             {/*Testimonial section ends here*/}
 

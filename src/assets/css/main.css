@@ -168,6 +168,10 @@ p{
     width: 64px;
 }
 
+.section-title.mb-20.wow.fadeInRight.delay-0-2s {
+	text-align: center;
+}
+
 
 
 @media (max-width:600px) {

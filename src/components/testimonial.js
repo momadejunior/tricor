@@ -44,7 +44,7 @@ export default function Testimonial() {
           url
         }
         nomeDaTestemunha
-        testumunho
+        testemunho
       }
     }
   `;
@@ -59,7 +59,11 @@ export default function Testimonial() {
     })
       .then(response => response.json())
       .then(data => {
+
+     
         setTestimonials(data.data.testemunhos);
+
+        console.log(testimonials)
       })
       .catch(error => console.error('Error fetching testimonials:', error));
   }, []);
@@ -82,7 +86,7 @@ export default function Testimonial() {
                 <div key={testimonial.id}>
                   <div className='testimonial-card text-center pricing-plan-item wow fadeInUp delay-0-2s'>
                     <h3>{testimonial.nomeDaTestemunha}</h3>
-                    <p>{testimonial.testumunho}</p>
+                    <p>{testimonial.testemunho}</p>
                   </div>
                 </div>
               ))}
