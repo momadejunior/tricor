@@ -127,13 +127,8 @@ export default function Contacts(){
                                 </div>
                                 <div class="col-sm-6 mb-30">
                                     <div class="form-group">
-                                        <label for="subject"><i class="far fa-question-circle"></i></label>
-                                        <select id="subject">
-                                            <option value="default" selected="">Assunto:</option>
-                                            {/* <option value="product">Escreva a sua Mensagem</option>
-                                            <option value="printing"></option>
-                                            <option value="design">Design</option> */}
-                                        </select>
+                                        <label for="phone"><i class="far fa-highlighter"></i></label>
+                                        <input type="text" id="phone" name="phone" class="form-control" value="" placeholder="Assunto"/>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
