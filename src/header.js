@@ -80,7 +80,7 @@ export default function Header() {
                         </Link>
                     </div>
                     <div className="nav-right-part nav-right-part-mobile">
-                       <Link className="search-bar-btn" href="#">
+                       <Link className="search-bar-btn" to="#">
                             <i className="far fa-search" />
                         </Link>
                     </div>
@@ -89,63 +89,63 @@ export default function Header() {
                             <li className="menu-item-has-children">
                                 <Link to="/">Página Inicial</Link>
                                 {/*<ul className="sub-menu">
-                                    <li><Link href="index.html">Home One</Link></li>
-                                    <li><Link href="index2.html">Home Two</Link></li>
-                                    <li><Link href="index3.html">Home Three</Link></li>
+                                    <li><Link to="index.html">Home One</Link></li>
+                                    <li><Link to="index2.html">Home Two</Link></li>
+                                    <li><Link to="index3.html">Home Three</Link></li>
                                 </ul>*/}
                             </li>
                             <li><Link to="/about">Sobre</Link></li>
                             <li className="menu-item-has-children">
                                 <Link to="/services">Serviços</Link>
                                 {/*<ul className="sub-menu">
-                                    <li><Link href="services.html">Services One</Link></li>
-                                    <li><Link href="services2.html">Services Two</Link></li>
-                                    <li><Link href="service-details.html">Service Details</Link></li>
+                                    <li><Link to="services.html">Services One</Link></li>
+                                    <li><Link to="services2.html">Services Two</Link></li>
+                                    <li><Link to="service-details.html">Service Details</Link></li>
                                 </ul>*/}
                             </li>
                             {/* <li className="menu-item-has-children">
                                 <Link to="/projects">Projetos</Link>
                                 {/*<ul className="sub-menu">
-                                    <li><Link href="projects.html">Projects</Link></li>
-                                    <li><Link href="project-details.html">Projects Details</Link></li>
+                                    <li><Link to="projects.html">Projects</Link></li>
+                                    <li><Link to="project-details.html">Projects Details</Link></li>
                                 </ul>
                             </li> */}
 
                             {/* <li className="menu-item-has-children">
                                 <Link to="/shop">Loja</Link>
                                 <ul className="sub-menu">
-                                    <li><Link href="shop.html">Shop One</Link></li>
-                                    <li><Link href="shop2.html">Shop Two</Link></li>
-                                    <li><Link href="shop3.html">Shop Three</Link></li>
-                                    <li><Link href="product-details.html">Single Product_1</Link></li>
-                                    <li><Link href="product-details2.html">Single Product_2</Link></li>
+                                    <li><Link to="shop.html">Shop One</Link></li>
+                                    <li><Link to="shop2.html">Shop Two</Link></li>
+                                    <li><Link to="shop3.html">Shop Three</Link></li>
+                                    <li><Link to="product-details.html">Single Product_1</Link></li>
+                                    <li><Link to="product-details2.html">Single Product_2</Link></li>
                                 </ul>
                             </li> */}
                             
                             <li className="menu-item-has-children">
                             <Link to="/contact">Fala connosco</Link>
                                 {/*<ul className="sub-menu">
-                                    <li><Link href="shop.html">Shop One</Link></li>
-                                    <li><Link href="shop2.html">Shop Two</Link></li>
-                                    <li><Link href="shop3.html">Shop Three</Link></li>
-                                    <li><Link href="product-details.html">Single Product_1</Link></li>
-                                    <li><Link href="product-details2.html">Single Product_2</Link></li>
+                                    <li><Link to="shop.html">Shop One</Link></li>
+                                    <li><Link to="shop2.html">Shop Two</Link></li>
+                                    <li><Link to="shop3.html">Shop Three</Link></li>
+                                    <li><Link to="product-details.html">Single Product_1</Link></li>
+                                    <li><Link to="product-details2.html">Single Product_2</Link></li>
                                 </ul>*/}
                             </li>
                             {/* <li className="menu-item-has-children">
-                               <link href="#">Páginas</Link>
+                               <link to="#">Páginas</Link>
                                 <ul className="sub-menu">
-                                    <li><Link href="team.html">Team Members</Link></li>
+                                    <li><Link to="team.html">Team Members</Link></li>
                                     <li className="menu-item-has-children">
                                         <Link to="/blog">Blog</Link>
                                         {/*<ul className="sub-menu">
-                                            <li><Link href="blog.html">Blog</Link></li>
-                                            <li><Link href="blog-details.html">Blog Details</Link></li>
+                                            <li><Link to="blog.html">Blog</Link></li>
+                                            <li><Link to="blog-details.html">Blog Details</Link></li>
                                         </ul>
                                     </li>
                                     <li><Link to="/faqs">FAQs</Link></li>
                                     <li><Link to="/contact">Fala connosco</Link></li>
-                                    <li><Link href="/404">404 Error</Link></li>
+                                    <li><Link to="/404">404 Error</Link></li>
                                 </ul>
                             </li> */}
                         </ul>
@@ -163,23 +163,23 @@ export default function Header() {
                         </Link>
                         <div className="menu-sidebar">
                             <button>
-                            <Link href="https://api.whatsapp.com/send?phone=+258871701039&text=Ola%20Tricor." target="__blank"><img src="./img/wts.png" className="flaticon-t-shirt icon-social"/></Link>
+                            <Link to="https://api.whatsapp.com/send?phone=+258871701039&text=Ola%20Tricor." target="__blank"><img src="./img/wts.png" className="flaticon-t-shirt icon-social"/></Link>
                             </button>
 
                             <button>
-                                <Link target="_blank" href="https://web.facebook.com/profile.php?id=61566302444827"><img src="./img/fb.png" className="flaticon-t-shirt icon-social"/></Link>
+                                <Link target="_blank" to="https://web.facebook.com/profile.php?id=61566302444827"><img src="./img/fb.png" className="flaticon-t-shirt icon-social"/></Link>
                             </button>
 
                             <button>
-                                <Link target="_blank" href="https://www.linkedin.com/company/105152594/admin/dashboard/"><img src="./img/in.png" className="flaticon-t-shirt icon-social"/></Link>
+                                <Link target="_blank" to="https://www.linkedin.com/company/105152594/admin/dashboard/"><img src="./img/in.png" className="flaticon-t-shirt icon-social"/></Link>
                             </button>
 
                             <button>
-                                <Link target="_blank" href="https://www.instagram.com/ticor_printsolutions?igsh=YzljYTk1ODg3Zg=="><img src="./img/ig.png" className="flaticon-t-shirt icon-social"/></Link>
+                                <Link target="_blank" to="https://www.instagram.com/ticor_printsolutions?igsh=YzljYTk1ODg3Zg=="><img src="./img/ig.png" className="flaticon-t-shirt icon-social"/></Link>
                             </button>
 
                             <button>
-                            <Link target="_blank" href="https://www.youtube.com/@TicorPrintSolution"><img src="./img/yt.png" className="flaticon-t-shirt icon-social"/></Link>
+                            <Link target="_blank" to="https://www.youtube.com/@TicorPrintSolution"><img src="./img/yt.png" className="flaticon-t-shirt icon-social"/></Link>
                             </button>
                         </div>
                     </div>
