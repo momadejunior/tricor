@@ -70,9 +70,9 @@ export default function ServicesItem() {
                       <li key={index}>{tipo}</li>
                     ))}
                   </ul>
-                  <a href="service-details.html" className="read-more">
+                  {/*<a href="service-details.html" className="read-more">
                     Ler mais <i className="far fa-long-arrow-right"></i>
-                  </a>
+                  </a>*/}
                 </div>
               </div>
             </div>
