@@ -59,7 +59,7 @@ export default function SliderServices() {
   };
 
   const query = `query SliderService {
-  sliderServices {
+  sliderServices(last: 100) {
     id
     imagemDoServico {
       url
