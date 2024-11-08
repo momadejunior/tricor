@@ -1,7 +1,7 @@
 export default function PricingPackage() {
     return (
         <>
-            <section className="pricing-plan-area pt-120 pb-100">
+            <section className="pricing-plan-area pt-120 pb-100" id="service">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-xl-7 col-lg-8">

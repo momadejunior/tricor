@@ -95,7 +95,7 @@ export default function SliderServices() {
       <section className="what-we-provide bgc-lighter pt-75 pb-80">
         <div className="container">
           <div className="section-title text-center mb-20 wow fadeInUp delay-0-2s">
-            <span className="sub-title mb-10">Seja nosso parceiro e ganha até 10% de desconto</span>
+            <a href="#service"><span className="sub-title mb-10" >Seja nosso parceiro e ganha até 10% de desconto</span></a>
             <h2>O que vai imprimir hoje?</h2>
           </div>
 
