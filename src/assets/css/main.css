@@ -140,6 +140,10 @@ p{
 	right:-1%;
 }
 
+.contact-info-item a{
+  color:#bc4a6e;
+}
+
 .slick-arrow.slick-prev {
 	position: absolute;
 	z-index: 1;

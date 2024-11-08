@@ -8227,20 +8227,24 @@ h1, h2, h3, h4, h5, h6, .tab-btns-one .nav-link .title {
       padding-right: 25px; } }
   .contact-info-item:not(:last-child) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-  .contact-info-item .icon {
-    -webkit-box-flex: 0;
-    -ms-flex: none;
-    flex: none;
-    color: white;
-    margin-top: 5px;
-    font-size: 25px;
-    margin-right: 25px;
-    width: 60px;
-    height: 60px;
-    background: #dd1d26;
-    line-height: 60px;
-    border-radius: 50%;
-    text-align: center; }
+
+
+    .contact-info-item .icon {
+      flex: none;
+      color: white;
+      margin-top: 5px;
+      font-size: 25px;
+      margin-right: 25px;
+      width: 60px;
+      height: 60px;
+      background: #bc4a6e;
+      line-height: 60px;
+      border-radius: 50%;
+      text-align: center;
+    }
+
+
+
     @media only screen and (max-width: 375px) {
       .contact-info-item .icon {
         width: 44px;
