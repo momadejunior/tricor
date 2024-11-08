@@ -23,6 +23,7 @@ import CartPage from "./pages/cart";
 import { CartProvider } from "./components/cartcontext";
 import CheckoutPage from "./pages/checkout";
 import ConfirmationPage from "./pages/confirmation";
+import Orcamento from "./pages/orcamento";
 
 export default function Header() { 
 
@@ -203,6 +204,7 @@ export default function Header() {
                     <Route path="/cart" element={<CartPage/>}/>
                     <Route path="/checkout" element={<CheckoutPage/>}/>
                     <Route path="/confirmation" element={<ConfirmationPage/>}/>
+                    <Route path="/orcamento" element={<Orcamento/>}/>
 
                 </Routes>
             </Router>

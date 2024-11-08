@@ -173,6 +173,136 @@ p{
 }
 
 
+/* orcamento.css */
+
+/* Page Banner */
+.page-banner {
+    background-size: cover;
+    padding-top: 65px;
+    padding-bottom: 75px;
+  }
+  
+  .page-banner .page-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .page-banner .breadcrumb {
+    background: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .page-banner .breadcrumb-item a {
+    color: #fff;
+  }
+  
+  .page-banner .breadcrumb-item.active {
+    color: #f0a500;
+  }
+  
+  /* Contact Form Section */
+  .contact-form-area {
+    margin-top: 110px;
+    margin-bottom: 130px;
+  }
+  
+  .contact-form-area .section-title {
+    margin-bottom: 40px;
+  }
+  
+  .contact-form-area .section-title .sub-title {
+    color: #f0a500;
+    font-weight: 500;
+  }
+  
+  .contact-form-area .section-title h2 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  /* Form Styles */
+  .contact-form .form-group {
+    margin-bottom: 25px;
+  }
+  
+  .contact-form .form-control {
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 16px;
+  }
+  
+  .contact-form .form-group label {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .checkbox-options,
+  .radio-options {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .checkbox-options label,
+  .radio-options label {
+    margin-right: 15px;
+    font-size: 14px;
+  }
+  
+  .checkbox-options input,
+  .radio-options input {
+    margin-right: 8px;
+  }
+  
+  /* Submit Button */
+  .theme-btn {
+    background-color: #f0a500;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .theme-btn:hover {
+    background-color: #d87e00;
+  }
+  
+  .theme-btn i {
+    margin-left: 10px;
+  }
+  
+  /* File Input */
+  .form-control[type="file"] {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Contact Us Component Styles */
+  .contact-us {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+  }
+  
+  .contact-us h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact-us p {
+    text-align: center;
+    font-size: 16px;
+    color: #777;
+  }
+  
+
+
 
 @media (max-width:600px) {
     .text-white.py-55.wow.fadeInUp.delay-0-2s {

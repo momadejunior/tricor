@@ -1,5 +1,5 @@
 import { useEffect, useState, useContext } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { CartContext } from "../components/cartcontext";
 
 export default function ProductDetails() {
@@ -10,7 +10,7 @@ export default function ProductDetails() {
     const [quantity, setQuantity] = useState(1); // State to manage quantity
 
     const { addToCart } = useContext(CartContext); // Access addToCart from CartContext
-    const { id } = useParams();
+    const { id } = useParams(); // Get product ID from URL
 
     const query = `query ProductoDetalhes($id: ID!) {
         productos(where: {id: $id}) {
@@ -29,6 +29,7 @@ export default function ProductDetails() {
     const variables = { id };
     const url = "https://us-west-2.cdn.hygraph.com/content/cm1z3ff5507ct08w75zh4fqp0/master";
 
+    // Fetch product details when component mounts or when the id changes
     useEffect(() => {
         fetch(url, {
             method: 'POST',
@@ -37,30 +38,36 @@ export default function ProductDetails() {
         })
             .then(res => res.json())
             .then(data => {
-                const resultado = data.data.productos[0];
-                SetTitulo(resultado.tituloDoProducto);
-                SetPrice(resultado.preco);
-                SetImage(resultado.imagemDoProducto.url);
-                SetDescricao(resultado.descricaoDoProducto.html);
+                const product = data.data.productos[0];
+                SetTitulo(product.tituloDoProducto);
+                SetPrice(product.preco);
+                SetImage(product.imagemDoProducto.url);
+                SetDescricao(product.descricaoDoProducto.html);
             })
             .catch(error => console.error("Error fetching product details:", error));
     }, [url, query, variables]);
 
     const handleAddToCart = (e) => {
         e.preventDefault();
-        addToCart({ id, titulo, preco, imagem, quantity }); // Add product to cart
+        addToCart({
+            id,
+            name: titulo,
+            price: preco,
+            image: imagem,
+            quantity,
+        }); // Add product to cart with quantity
     };
 
     return (
         <>
-            <section className="page-banner bgs-cover text-white pt-65 pb-75">
+            <section className="page-banner bgs-cover text-white pt-65 pb-75" style={{ backgroundImage: 'url(assets/images/loja.png)' }}>
                 <div className="container">
                     <div className="banner-inner">
-                        <h2 className="page-title wow fadeInUp delay-0-2s">Single Product_01</h2>
+                        <h2 className="page-title wow fadeInUp delay-0-2s">{titulo || "Product"}</h2>
                         <nav aria-label="breadcrumb">
                             <ol className="breadcrumb wow fadeInUp delay-0-4s">
-                                <li className="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li className="breadcrumb-item active">Single Product</li>
+                                <li className="breadcrumb-item"><Link to="/">Home</Link></li>
+                                <li className="breadcrumb-item active">{titulo || "Single Product"}</li>
                             </ol>
                         </nav>
                     </div>
@@ -75,12 +82,7 @@ export default function ProductDetails() {
                                 <div className="tab-pane fade preview-item active show" id="preview1">
                                     <img src={imagem || "assets/images/shop/preview1.jpg"} alt="Preview" />
                                 </div>
-                                <div className="tab-pane fade preview-item" id="preview2">
-                                    <img src={imagem || "assets/images/shop/preview1.jpg"} alt="Preview" />
-                                </div>
-                                <div className="tab-pane fade preview-item" id="preview3">
-                                    <img src={imagem || "assets/images/shop/preview1.jpg"} alt="Preview" />
-                                </div>
+                                {/* Additional preview images */}
                             </div>
                         </div>
                         <div className="col-lg-2 col-3">
@@ -88,12 +90,7 @@ export default function ProductDetails() {
                                 <a href="#preview1" data-bs-toggle="tab" className="thumb-item active show">
                                     <img src={imagem || "assets/images/shop/thumb1.jpg"} alt="Thumb" />
                                 </a>
-                                <a href="#preview2" data-bs-toggle="tab" className="thumb-item">
-                                    <img src={imagem || "assets/images/shop/thumb2.jpg"} alt="Thumb" />
-                                </a>
-                                <a href="#preview3" data-bs-toggle="tab" className="thumb-item">
-                                    <img src={imagem || "assets/images/shop/thumb3.jpg"} alt="Thumb" />
-                                </a>
+                                {/* Additional thumbnail images */}
                             </div>
                         </div>
                         <div className="col-lg-5">
@@ -109,7 +106,7 @@ export default function ProductDetails() {
                                         <i className="fas fa-star"></i>
                                         <i className="fas fa-star"></i>
                                     </div>
-                                    <span className="price">${preco}</span>
+                                    <span className="price">{preco ? `${preco} MT` : "Price not available"}</span>
                                 </div>
                                 <hr className="mb-25" />
                                 <p dangerouslySetInnerHTML={{ __html: descricao }} />
