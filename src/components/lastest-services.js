@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 export default  function LastestService(){
@@ -64,7 +65,7 @@ export default  function LastestService(){
                                     </div>
                                    {/*  <h6>Awards Winning Printing Company</h6>
                                     <p>Take a trivial example which of ever untakes laborious physical exercise except</p> */}
-                                    {/* <a href="services.html" className="theme-btn hover-two mt-20">Ler mais<i className="far fa-long-arrow-right"></i></a> */}
+                                    {/* <Link to="services.html" className="theme-btn hover-two mt-20">Ler mais<i className="far fa-long-arrow-right"></i></Link> */}
                                     <div className="circle-shapes no-animation">
                                         <div className="shape-inner">
                                             <span className="dot-one"></span>
@@ -84,9 +85,9 @@ export default  function LastestService(){
                                                 {/* <i className="flaticon-print"></i> */}
                                                 <img src="./img/digital.png"/>
                                             </div>
-                                            <h3><a href="service-details.html">Impressão Digital</a></h3>
+                                            <h3><Link to="/services">Impressão Digital</Link></h3>
                                             <p>É ideal para trabalhos de pequenas tiragens e alta personalização.</p>
-                                            <a href="service-details.html" className="read-more">Ler mais <i className="far fa-long-arrow-right"></i></a>
+                                            <Link to="/services" className="read-more">Ler mais <i className="far fa-long-arrow-right"></i></Link>
                                             <div className="bg-image" ></div>
                                         </div>
                                     </div>
@@ -97,9 +98,9 @@ export default  function LastestService(){
                                                 
                                                 <img src="./img/tshirt-print.png"/>
                                             </div>
-                                            <h3><a href="service-details.html">Serigrafia para T-Shirts</a></h3>
+                                            <h3><Link to="/services">Serigrafia para T-Shirts</Link></h3>
                                             <p>É versátil para imprimir em materiais diversos e em grandes volumes.</p>
-                                            <a href="service-details.html" className="read-more">Ler mais <i className="far fa-long-arrow-right"></i></a>
+                                            <Link to="/services" className="read-more">Ler mais <i className="far fa-long-arrow-right"></i></Link>
                                             <div className="bg-image" ></div>
                                         </div>
                                     </div>
@@ -110,9 +111,9 @@ export default  function LastestService(){
                                            
                                               <img src="./img/offset-color.png"/>
                                             </div>
-                                            <h3><a href="service-details.html">Impressão Offset</a></h3>
+                                            <h3><Link to="/services">Impressão Offset</Link></h3>
                                             <p>É mais adequada para grandes tiragens e trabalhos de alta qualidade.</p>
-                                            <a href="service-details.html" className="read-more">Ler mais <i className="far fa-long-arrow-right"></i></a>
+                                            <Link to="/services" className="read-more">Ler mais <i className="far fa-long-arrow-right"></i></Link>
                                             <div className="bg-image" ></div>
                                         </div>
                                     </div>
@@ -123,9 +124,9 @@ export default  function LastestService(){
                                                 <img src="./img/sublimacao.png"/>
                                                 
                                             </div>
-                                            <h3><a href="service-details.html">Sublimação</a></h3>
+                                            <h3><Link to="/services">Sublimação</Link></h3>
                                             <p>É ideal para personalização em tecidos e outros materiais revestidos.</p>
-                                            <a href="service-details.html" className="read-more">Ler mais <i className="far fa-long-arrow-right"></i></a>
+                                            <Link to="/services" className="read-more">Ler mais <i className="far fa-long-arrow-right"></i></Link>
                                             <div className="bg-image" ></div>
                                         </div>
                                     </div>
