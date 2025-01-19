@@ -1,6 +1,43 @@
 import Partners from "./components/partners";
+import { useState,useEffect } from "react";
+
 
 export default function Footer(){
+
+
+
+
+     const [logo, setLogo] = useState(null);
+    
+        const url = "https://us-west-2.cdn.hygraph.com/content/cm1z3ff5507ct08w75zh4fqp0/master";
+    
+        const query = `query MyQuery {
+      logos {
+        id
+        logotipoDoWebsite {
+          url
+        }
+      }
+    }`;
+
+    useEffect(() => {
+    
+            fetch(url,{
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ query })
+            })
+    
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                setLogo(data.data.logos[0].logotipoDoWebsite.url);
+            })
+        }, []);
+
+
     return(
         <>
             {/*<!-- footer top start -->*/}
@@ -14,7 +51,7 @@ export default function Footer(){
                     <div className="col-xl-4 col-lg-5 col-md-6">
                         <div className="widget widget_about wow fadeInUp delay-0-2s">
                             <div className="footer-logo mb-25">
-                                <a target="_blank" href="index.html"><img src="assets/images/logos/logo.png" alt="Logo"/></a>
+                                <a target="_blank" href="index.html"><img src={logo} alt="Logo"/></a>
                             </div>
                             <p>Oferecemos serviços personalizados e produtos de alta qualidade, adira e descubra como podemos ajudá-lo a destacar sua marca.</p>
                             <div className="social-style-two mt-15">

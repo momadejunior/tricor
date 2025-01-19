@@ -16,24 +16,24 @@ export default function CartPage() {
 
   return (
     <section className="cart-page container pt-130 rpt-100">
-      <h2 className="text-center mb-50">Shopping Cart</h2>
+      <h2 className="text-center mb-50">Carrinho de compras</h2>
 
       {cartItems.length === 0 ? (
         <div className="text-center">
-          <p>Your cart is empty!</p>
-          <Link to="/shop" className="theme-btn">Continue Shopping</Link>
+          <p>Seu carrinho está vazio!</p>
+          <Link to="/shop" className="theme-btn">Continuar comprando</Link>
         </div>
       ) : (
         <>
           <table className="table">
             <thead>
               <tr>
-                <th>Product</th>
+                <th>Produto</th>
                 <th>Nome</th>
-                <th>Quantity</th>
-                <th>Price</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
                 <th>Total</th>
-                <th>Remove</th>
+                <th>Remover</th>
               </tr>
             </thead>
             <tbody>
@@ -66,7 +66,7 @@ export default function CartPage() {
                       onClick={() => removeFromCart(item.id)}
                       className="btn btn-danger"
                     >
-                      Remove
+                      Remover
                     </button>
                   </td>
                 </tr>
@@ -75,13 +75,13 @@ export default function CartPage() {
           </table>
 
           <div className="cart-summary text-end">
-            <h4>Total Price: {getTotalPrice()}MT</h4>
+            <h4>Preço total: {getTotalPrice()}MT</h4>
             <div className="d-flex justify-content-end mt-3">
               <button onClick={clearCart} className="btn btn-outline-danger me-2">
-                Clear Cart
+              Limpar carrinho
               </button>
               <Link to="/checkout" className="btn theme-btn">
-                Proceed to Checkout
+              Limpar carrinho
               </Link>
             </div>
           </div>

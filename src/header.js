@@ -20,9 +20,23 @@ import CheckoutPage from "./pages/checkout";
 import ConfirmationPage from "./pages/confirmation";
 import Orcamento from "./pages/orcamento";
 import tricor from './assets/images/logos/logo.png';
+import { LoginUser } from "./pages/login";
+import SignUp from "./pages/signup";
 
 export default function Header() {
     const [countItem, setCountItem] = useState(0);
+    const [logo, setLogo] = useState(null);
+
+    const url = "https://us-west-2.cdn.hygraph.com/content/cm1z3ff5507ct08w75zh4fqp0/master";
+
+    const query = `query MyQuery {
+  logos {
+    id
+    logotipoDoWebsite {
+      url
+    }
+  }
+}`;
 
     useEffect(() => {
         let items = localStorage.getItem("cart");
@@ -30,11 +44,30 @@ export default function Header() {
             let cartData = JSON.parse(items);
             setCountItem(cartData.length || 0); // Safely set count if cartData is valid
         }
+
+
+        fetch(url,{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ query })
+        })
+
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            setLogo(data.data.logos[0].logotipoDoWebsite.url);
+        })
     }, []);
 
     return (
         <>
-            <div className="navbar-top navbar-top-style">
+            
+
+            <CartProvider>
+                <Router>
+                <div className="navbar-top navbar-top-style">
                 <div className="container container-1570">
                     <div className="row">
                         <div className="col-lg-6">
@@ -47,7 +80,8 @@ export default function Header() {
                             <ul className="topbar-right justify-content-center justify-content-lg-end">
                                 <li>
                                     <img src="./img/user.png" className="flaticon-t-shirt icon-navbar" />
-                                    <b>Minha Conta</b>
+                                    
+                                    <Link to="/signin">Minha Conta</Link>
                                 </li>
                                 <li className="social-style-one">
                                     <img src="./img/list.png" className="flaticon-t-shirt icon-navbar" />
@@ -63,8 +97,7 @@ export default function Header() {
                 </div>
             </div>
 
-            <CartProvider>
-                <Router>
+{/*aqui inicia barra de navegacao*/}
                     <nav className="navbar style-one navbar-area navbar-expand-lg py-20">
                         <div className="container container-1570">
                             <div className="responsive-mobile-menu">
@@ -75,7 +108,7 @@ export default function Header() {
                             </div>
                             <div className="logo">
                                 <Link to="/">
-                                    <img src={tricor} alt="img" />
+                                    <img src={logo} alt="img" />
                                 </Link>
                             </div>
                             <div className="nav-right-part nav-right-part-mobile">
@@ -127,6 +160,17 @@ export default function Header() {
                                             <img src="./img/yt.png" className="flaticon-t-shirt icon-social" />
                                         </Link>
                                     </button>
+
+                                    <button>
+                                        <Link to="https://www.instagram.com/ticor_printsolutions?igsh=YzljYTk1ODg3Zg==" target="_blank">
+                                            PT
+                                        </Link>
+                                    </button>
+                                    <button>
+                                        <Link to="https://www.youtube.com/@TicorPrintSolution" target="_blank">
+                                            EN
+                                        </Link>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -150,6 +194,8 @@ export default function Header() {
                         <Route path="/checkout" element={<CheckoutPage />} />
                         <Route path="/confirmation" element={<ConfirmationPage />} />
                         <Route path="/orcamento" element={<Orcamento />} />
+                        <Route path="/signin" element={<LoginUser />} />
+                        <Route path="/signup" element={<SignUp/>} />
                     </Routes>
                 </Router>
             </CartProvider>
